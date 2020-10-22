@@ -27,7 +27,7 @@ section {
     top: 0;
     width: 320px;
     height: 591px;
-    background-color: #1367CD;
+    background-color: black;
     z-index: 20;
 }
 
@@ -111,7 +111,7 @@ header .container .main-content {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  width: 1290px;
+  width: 1682px;
 }
 
 header .exposure{
@@ -228,9 +228,10 @@ main {
   width: 100%;
   justify-content: center;
   background-image: url('../images/bg\ 1920-1680\ home.png');
+  background-repeat: round;
 }
 .intro .container {
-    width: 1290px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -244,18 +245,17 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 50px;
+    align-items: flex-end;
+    margin-bottom: 80px;
 }
 
 .intro .container .content .video-container {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    width: 843px;
+    width: 1255px;
     height: auto;
     margin-right: 0;
-    margin-bottom: 40px;
 }
 
 .intro .container .content .video-container .video-header {
@@ -267,10 +267,10 @@ main {
     font-style: normal;
     font-weight: bold;
     font-size: 55px;
-    line-height: 67px;
+    line-height: 105px;
     text-align: left;
     text-transform: uppercase;
-    color: white;
+    color: black;
     margin-bottom: 0;
 }
 
@@ -280,13 +280,13 @@ main {
     font-size: 20px;
     line-height: 150%;
     text-align: left;
-    color: white;
+    color: black;
     margin-top: 0;
 }
 
 .intro .container .content .video-container .video {
     width: 100%;
-    height: 557px;
+    height: 640.15px;
     margin-top: 20px;
     border-radius: 30px;
 }
@@ -301,8 +301,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     width: 407px;
-    height: auto;
-    margin: 10px;
+    height: 878px;
     margin-top: 50px;
     margin-left: 20px;
     box-shadow: 0px 4px 25px rgba(79, 79, 79, 0.1);
@@ -321,7 +320,6 @@ main {
     line-height: 33px;
     letter-spacing: 0em;
     text-align: center;
-    margin-top: 80px;
 }
 
 .intro .container .content .form-container h3 {
@@ -494,7 +492,7 @@ main {
 }
 
 .about .container .history {
-    width: 1276px;
+    width: 1676px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -528,7 +526,7 @@ main {
 }
 
 .about .container .history div .paragraphs .history-paragraph {
-    width: 399px;
+    width: 540px;
     height: auto;
     font-family: Poppins;
     font-style: normal;
@@ -558,36 +556,6 @@ main {
     justify-content: center;
     align-items: center;
     z-index: 10;
-}
-
-.left-leafs {
-    position: absolute;
-    left: 0;
-}
-
-.top-left-leaf {
-    top: 1750px;
-    z-index: -1;
-}
-
-.bottom-left-leaf {
-    top: 2030px;
-
-}
-
-.right-leafs{
-    position: absolute;
-    right: 0;
-}
-
-.top-right-leaf {
-    top: 1750px;
-    z-index: -1;
-}
-
-.bottom-right-leaf {
-    top: 2010px;
-
 }
 
 .about .container {
@@ -644,115 +612,9 @@ main {
     margin-top: 5px;
 }
 
-.about .container .partners {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 900px;
-    margin-top: 50px;
-    margin-bottom: 150px;
-    z-index: 20;
-}
-
-.about .container .partners div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.about .container .partners img {
-    margin: 10px;
-}
-
-.about .container .market-leaders {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 150px;
-}
-
-.about .container .market-leaders .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 579px;
-    width: 540px;
-    border-radius: 30px;
-    background-color: white;
-    margin: 10px;
-}  
-
-.about .container .market-leaders .item h3 {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 33px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #333333;
-    margin-top: 70px;
-}
-
-.about .container .market-leaders .item .market-leaders-description {
-    display: inline-block;
-    height: 300px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #4F4F4F;
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-bottom: 0;
-}
-
-.about .container .market-leaders .item .details-container {
-    max-height: 162px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.about .container .market-leaders .item:first-child .details-container img {
-    margin-bottom: 20px;
-}
-
-.about .container .market-leaders .item:nth-child(2) .details-container img {
-    margin-bottom: 45px;
-}
-
-.about .container .market-leaders .item .details-container .details-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.about .container .market-leaders .item .details-container .details-inner p {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 33px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #333333;
-    margin: 5px;
-}
-
-.about .container .market-leaders .item .details-container .details-inner p span {
-    color: #527C6F;
-}
-
 .feedbacks {
     background-image: url('../images/bg\ 1920-1680\ testimonials.png');
+    background-repeat: round;
 }
 
 .feedbacks .container {
@@ -768,7 +630,7 @@ main {
     font-weight: bold;
     font-size: 60px;
     text-align: center;
-    color: white;
+    color: black;
     margin-bottom: 10px;
 }
 
@@ -780,7 +642,7 @@ main {
     font-size: 36px;
     line-height: 54px;
     text-align: center;
-    color: white;
+    color: black;
     margin-top: 10px;
 }
 
@@ -810,22 +672,31 @@ main {
     font-weight: 700;
     text-align: center;
     margin-bottom: 14px;
-    color: white;
+    color: black;
 }
 
 .feedbacks .container .feedback-item .avatar .info {
     font-size: 18px;
     text-align: center;
     margin-top: 14px;
-    color: white;
+    color: black;
 }
 
 .feedbacks .container .feedback-item .feedback-item-content p {
-    width: 825px;
+    width: 1112px;
     font-family: Poppins;
     font-size: 18px;
     line-height: 27px;
-    color: white;
+    color: black;
+}
+
+.feedbacks .container .feedback-item .feedback-item-content .source {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.feedbacks .container .feedback-second-item .feedback-item-content p {
+    margin-top: 10px;
 }
 
 .how-works .container {
@@ -859,7 +730,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 500px;
+    width: 540px;
     margin-right: 50px;
 }
 
@@ -989,7 +860,7 @@ main {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: 1395px;
+    width: 1680px;
 }
 
 .faq .container .answers details summary::-webkit-details-marker {
@@ -1040,7 +911,7 @@ details[open] summary .round-button {
 }
 
 .faq .container .answers details p {
-    max-width: 1390px;
+    max-width: 1680px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -1098,7 +969,7 @@ details[open] summary .round-button {
 
 @media ( max-width: 1680px ) {
     header .container .main-content {
-        width: 1280;
+        width: 1270px;
     }
 
     header .container .main-content .navigation {
@@ -1131,6 +1002,14 @@ details[open] summary .round-button {
 
     .intro .container .content .form-container form .checkboxes {
         width: 335.4px;
+    }
+
+    .about .container .history {
+        width: 1276px;
+    }
+
+    .about .container .history div .paragraphs .history-paragraph {
+        width: 399px;
     }
 
     .about .container .about-items .item {
@@ -1330,7 +1209,7 @@ details[open] summary .round-button {
     }
 
     .about .container .history {
-        width: 800px;
+        width: 900px;
     }
 
     .about .container .history .paragraphs-container {
@@ -1588,6 +1467,10 @@ details[open] summary .round-button {
         height: 29.5px;       
     }
 
+    .about .container .history {
+        width: 800px;
+    }
+
     .about .container .history .paragraphs-container .paragraphs {
         width: 800px;
         justify-content: space-between;
@@ -1808,6 +1691,10 @@ details[open] summary .round-button {
     .feedbacks .container .feedback-item .feedback-item-content p {
         width: 431px;
     }
+
+    .feedbacks .container .feedback-item .feedback-item-content .source {
+        margin-top: 20px;
+    }
     
 
     .how-works .container>h2 {
@@ -1991,7 +1878,7 @@ details[open] summary .round-button {
 
     .intro .container .content .form-container {
         width: 800px;
-
+        height: auto;
     }
 
     .intro .container .content .form-container h2 {
@@ -2517,7 +2404,7 @@ details[open] summary .round-button {
 
     .intro .container .content .form-container {
         width: 624px;
-
+        height: auto;
     }
 
     .intro .container .content .form-container h2 {
