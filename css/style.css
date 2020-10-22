@@ -13,6 +13,10 @@ section {
   margin: 0;
 }
 
+.wrapper {
+    width: 100%;
+}
+
 .hidden {
     display: none;
 }
@@ -154,6 +158,7 @@ header .container .main-content .navigation{
     justify-content: center;
     align-self: flex-end;
     margin-bottom: 8px;
+    margin-left: 150px;
 }
 header .container .main-content .navigation a {
     margin-right: 30px;
@@ -253,12 +258,11 @@ main {
     margin-bottom: 40px;
 }
 
-.intro .container .video-header {
+.intro .container .content .video-container .video-header {
     align-self: flex-start;
-    margin-left: 10px;
 }
 
-.intro .container .video-header h1 {
+.intro .container .content .video-container .video-header h1 {
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -269,9 +273,7 @@ main {
     color: white;
     margin-bottom: 0;
 }
-.intro .container .content .video-container .video-header span {
-    color: rgb(235, 200, 1)
-}
+
 .intro .container .content .video-container p {
     font-style: normal;
     font-weight: normal;
@@ -301,7 +303,7 @@ main {
     width: 407px;
     height: auto;
     margin: 10px;
-    margin-top: -50px;
+    margin-top: 50px;
     margin-left: 20px;
     box-shadow: 0px 4px 25px rgba(79, 79, 79, 0.1);
     border-radius: 30px;
@@ -340,7 +342,7 @@ main {
 }
 
 .intro .container .content .form-container form input {
-    width: 445px;
+    width: 307.7px;
     height: 30px;
     margin: 5px;
     border: none;
@@ -383,7 +385,7 @@ main {
 }
 
 .intro .container .content .form-container form .checkboxes {
-    width: 445px;
+    width: 307.7px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -892,7 +894,6 @@ main {
 .how-works .container .how-works-bottom {
     display: flex;
     justify-content: center;
-    width: 100%;
     height: 300px;
     margin-left: 110px;
 }
@@ -1092,6 +1093,10 @@ details[open] summary .round-button {
         width: 1050px;
     }
 
+    header .container .main-content .navigation {
+        margin-left: 0;
+    }
+
     .intro .container .content .video-container {
         width: 843px;
         height: auto;
@@ -1267,12 +1272,12 @@ details[open] summary .round-button {
         width: 657.2px;
         height: auto;
     }
-    .intro .container .video-header h1 {
+    .intro .container .content .video-container .video-header h1 {
         font-size: 54px;
         text-align: left;
     }
 
-    .intro .container .video-header {
+    .intro .container .content .video-container .video-header {
         align-self: center;
     }
 
@@ -1518,11 +1523,6 @@ details[open] summary .round-button {
         margin-bottom: 100px;
     }
     
-
-    .intro .container .video-header h1 {
-        width: 800px;
-        margin-left: 140px;
-    }
     .intro .container .content .form-container {
         width: 524px;
 
