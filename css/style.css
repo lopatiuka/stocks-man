@@ -94,7 +94,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;  
-  background-color: #146EB4;
+  background-color: black;
 }
 
 header .container {
@@ -102,15 +102,16 @@ header .container {
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 header .container .main-content {
     display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  width: 1290px;
 }
 
 header .exposure{
@@ -158,7 +159,7 @@ header .container .main-content .navigation{
     justify-content: center;
     align-self: flex-end;
     margin-bottom: 8px;
-    margin-left: 150px;
+    margin-left: 10px;
 }
 header .container .main-content .navigation a {
     margin-right: 30px;
@@ -226,7 +227,7 @@ main {
 .intro {
   width: 100%;
   justify-content: center;
-  background-image: url(../images/bghome.png);
+  background-image: url('../images/bg\ 1920-1680\ home.png');
 }
 .intro .container {
     width: 1290px;
@@ -253,7 +254,6 @@ main {
     align-items: center;
     width: 843px;
     height: auto;
-    margin: 10px;
     margin-right: 0;
     margin-bottom: 40px;
 }
@@ -288,7 +288,7 @@ main {
     width: 100%;
     height: 557px;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .intro .container .content .video-container iframe {
@@ -355,6 +355,10 @@ main {
     text-align: left;
     color: #4F4F4F;
     margin-top: 30px;
+}
+
+.intro .container .content .form-container form input:focus {
+    outline: none;
 }
 
 .intro .container .content .form-container form input[type=submit] {
@@ -586,6 +590,10 @@ main {
 
 }
 
+.about .container {
+    margin-bottom: 50px;
+}
+
 .about .container .about-items .top {
     position: absolute;
     left: 0;
@@ -744,7 +752,7 @@ main {
 }
 
 .feedbacks {
-    background-image: url('../images/bg\ testimonials.png');
+    background-image: url('../images/bg\ 1920-1680\ testimonials.png');
 }
 
 .feedbacks .container {
@@ -994,7 +1002,7 @@ main {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    background-color: #146EB4;
+    background-color: black;
 
     font-size: 18px;
     font-style: normal;
@@ -1014,7 +1022,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #146EB4;
+    color: black;
     font-size: 28px;
     font-weight: 500;
 
@@ -1042,7 +1050,7 @@ details[open] summary .round-button {
 }
 
 .footer {
-    background-color: #146EB4;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1090,7 +1098,7 @@ details[open] summary .round-button {
 
 @media ( max-width: 1680px ) {
     header .container .main-content {
-        width: 1050px;
+        width: 1280;
     }
 
     header .container .main-content .navigation {
@@ -1265,7 +1273,7 @@ details[open] summary .round-button {
     }
 
     header .container .main-content {
-        width: 650px;
+        width: 1000.31px;
     }
 
     .intro .container .content .video-container {
