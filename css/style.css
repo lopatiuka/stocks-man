@@ -35,6 +35,7 @@ section {
     float: right;
     margin: 15px;
     font-size: 20px;
+    color: white;
 }
 
 .menu-container .hide:hover {
