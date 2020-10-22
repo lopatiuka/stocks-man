@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: auto;
     font-family: Poppins;
+    width: 1920px;
 }
   
 section {
@@ -246,7 +247,7 @@ main {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    width: 1111px;
+    width: 843px;
     height: auto;
     margin: 10px;
     margin-right: 0;
@@ -298,7 +299,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 540px;
+    width: 407px;
     height: auto;
     margin: 10px;
     margin-top: -50px;
