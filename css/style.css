@@ -271,7 +271,7 @@ main {
     line-height: 105px;
     text-align: left;
     text-transform: uppercase;
-    color: black;
+    color: white;
     margin-bottom: 0;
 }
 
@@ -281,7 +281,7 @@ main {
     font-size: 20px;
     line-height: 150%;
     text-align: left;
-    color: black;
+    color: white;
     margin-top: 0;
 }
 
@@ -631,7 +631,7 @@ main {
     font-weight: bold;
     font-size: 60px;
     text-align: center;
-    color: black;
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -643,7 +643,7 @@ main {
     font-size: 36px;
     line-height: 54px;
     text-align: center;
-    color: black;
+    color: white;
     margin-top: 10px;
 }
 
@@ -673,14 +673,14 @@ main {
     font-weight: 700;
     text-align: center;
     margin-bottom: 14px;
-    color: black;
+    color: white;
 }
 
 .feedbacks .container .feedback-item .avatar .info {
     font-size: 18px;
     text-align: center;
     margin-top: 14px;
-    color: black;
+    color: white;
 }
 
 .feedbacks .container .feedback-item .feedback-item-content p {
@@ -688,12 +688,13 @@ main {
     font-family: Poppins;
     font-size: 18px;
     line-height: 27px;
-    color: black;
+    color: white;
 }
 
 .feedbacks .container .feedback-item .feedback-item-content .source {
     display: inline-block;
     margin-top: 10px;
+    color: white;
 }
 
 .feedbacks .container .feedback-second-item .feedback-item-content p {
