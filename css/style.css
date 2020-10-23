@@ -1382,6 +1382,273 @@ details[open] summary .round-button {
         font-size: 14px;
     }
 }
+@media ( max-width: 1024px ) {
+    header .container {
+        justify-content: center;
+    }
+
+    header .exposure {
+        margin-right: 50px;
+    }
+
+    header .container .main-content {
+        width: 1000.31px;
+    }
+
+    .intro .container .content .video-container {
+        width: 657.2px;
+        height: auto;
+    }
+    .intro .container .content .video-container .video-header h1 {
+        font-size: 54px;
+        text-align: left;
+    }
+
+    .intro .container .content .video-container .video-header {
+        align-self: center;
+    }
+
+    .intro .container .content .form-container {
+        width: 313.12px;
+    }
+
+    .intro .container .content .form-container h2 {
+        width: 252.24px;
+        font-size: 18px;
+    }
+
+    .intro .container .content .form-container h2 {
+        font-size: 18px;
+    }
+
+    .intro .container .content .form-container form input {
+        width: 258.04px;
+    }
+    .intro .container .content .form-container form input[type = submit]{
+        width: 216.96px;
+        height: 65.39px;
+        font-size: 14px;
+    }
+
+    .intro .container .content .form-container form .checkboxes {
+        width: 258.04px;
+    }
+
+    .intro .ribbon .logos img:nth-child(1){
+        width: 116.18px;
+        height: 59px;
+    }
+
+    .intro .ribbon .logos img:nth-child(2){
+        width: 159.1px;
+        height: 29.5px;        
+    }
+
+    .intro .ribbon .logos img:nth-child(3){
+        width: 47.2px;
+        height: 47.2px;
+    }
+
+    .intro .ribbon .logos img:nth-child(4){
+        width: 92.96px;
+        height: 41.3px;        
+    }
+
+    .intro .ribbon .logos img:nth-child(5){
+        width: 137.01px;
+        height: 47.2px;        
+    }
+
+    .intro .ribbon .logos img:nth-child(6){
+        width: 63.21px;
+        height: 29.5px;       
+    }
+
+    .feedbacks .container .feedback-item .avatar .name {
+        font-size: 18px;
+    }
+
+    .feedbacks .container .feedback-item .avatar .info {
+        font-size: 14px;
+        margin-top: 18px;
+    }
+
+    .feedbacks .container .feedback-item .feedback-item-content p {
+        font-size: 14px;
+        width: 625px;
+    }
+
+    .about .container .history {
+        width: 900px;
+    }
+
+    .about .container .history .paragraphs-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about .container .description {
+        height: auto;
+    }
+
+    .about .container .description p {
+        width: 478.33px;
+        height: auto;
+    }
+
+    .about .container .about-items .item {
+        width: 310.49px;
+        height: 119px;
+    }
+
+    .about .container .about-items .item img {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .about .container .about-items .item .item-detail h2 {
+        font-size: 27px;
+        margin-bottom: 0;
+    }
+
+    .about .container .about-items .item .item-detail p {
+        margin-top: 0;
+    }
+   
+    .about .container .market-leaders .item {
+        width: 312.85px;
+        height: 750px;
+    }
+
+    .about .container .market-leaders .item .market-leaders-description {
+        height: 400px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 16px;
+    }
+
+    .about .container .market-leaders .item .details-container {
+        align-items: center;
+    }
+
+    .about .container .market-leaders .item h3 {
+        display: inline-block;
+        font-size: 18px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 70px;
+    }
+
+    .about .container .market-leaders .item .details-container .details-inner p {
+        font-size: 16px;
+    }
+
+    
+    .about .container .market-leaders .item .details-container img {
+        width: 81.26px;
+        height: 81.26px;
+    }
+
+    .about .container .market-leaders .item:nth-child(2) .details-container img {
+        margin-bottom: 0;
+        margin-top: -40px;
+    }
+
+    .how-works .container>h2 {
+        font-size: 42px;
+    }
+    
+    .how-works .container .steps hr.third-line {
+        display: none;
+    }
+    
+    .how-works .container .steps .step-item {
+        width: 270px;
+    }
+    
+    .how-works .container .steps .step-item .steps-item-header {
+        width: 307px;
+        font-size: 28px;
+    }
+    
+    .how-works .container .steps .step-item .steps-item-description {
+        width: 307px;
+        font-size: 14px;
+    }
+    
+    .how-works .container .steps .step-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .how-works .container .how-works-bottom {
+        margin-left: 0;
+    }
+    
+    .how-works .container .how-works-bottom .start-now-link {
+        height: 64.53px;
+        width: 214.09px;
+        font-size: 14px;
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(1) {
+        width: 371.91px;
+        height: 342px;
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(3) {
+        height: 365.07px;
+        width: 426.72px;
+        margin-left: -190px;
+    }
+
+    .faq .container .faq-header {
+        font-size: 41.85px;
+    }
+
+    .faq .container .faq-caption {
+        font-size: 16.74px;
+    }
+
+    .faq .container {
+        width: 100%;
+    }
+
+    .faq .container .answers {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq .container .answers details {
+        width: 828px;
+    }
+
+    .faq .container .answers details summary {
+        font-size: 14px;
+    }
+
+    .faq .container .answers details p {
+        font-size: 14px;
+    }
+
+    .footer .container .links-list div a {
+        font-size: 14px;
+    }
+    
+    .footer .risk-disclaimer h2 {
+        font-size: 32px;
+    }
+    .footer .risk-disclaimer p {
+        font-size: 14px;
+    }
+
+    .footer .rights {
+        font-size: 14px;
+    }
+}
 
 @media ( max-width: 1000px ) {
     header .container .main-content {
@@ -1416,7 +1683,6 @@ details[open] summary .round-button {
     
     .intro .container .content .form-container {
         width: 524px;
-
     }
 
     .intro .container .content .form-container h2 {
@@ -1606,7 +1872,7 @@ details[open] summary .round-button {
     }
 
     .how-works .container .how-works-bottom img:nth-child(3) {
-        margin-left: -115px;
+        margin-left: -180px;
     }
 
 
@@ -1741,6 +2007,10 @@ details[open] summary .round-button {
     .how-works .container .start-now-link {
         margin-bottom: -100px;
     }
+
+    .how-works .container .how-works-bottom img:nth-child(3) {
+        margin-left: -200px;
+    }
     
     .how-works .container img {
         height: 378px;
@@ -1782,6 +2052,540 @@ details[open] summary .round-button {
     }
 }
 
+@media ( max-device-width: 540px ) {
+    body {
+        width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .wrapper {
+        width: 890px;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 890px;
+    }
+    .menu-icon {
+        right: -400px;
+    }
+
+    .menu-container {
+        position: absolute;
+        right: -500px;
+        width: 600px;
+        height: 800px;
+    }
+    
+    .menu-container .hide {
+        float: right;
+        margin: 15px;
+        font-size: 20px;
+    }
+    
+    .menu-container .hide:hover {
+        cursor: pointer;
+    }
+    
+    .menu-container .menu-links {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .menu-container .menu-links a {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    .menu-container .menu-cannabis {
+        top: 550px;
+    }
+
+    header .exposure {
+        display: flex;
+        flex-direction: column;
+        right: -350px;
+    }
+
+    header .exposure .country {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    header .exposure .caption {
+        font-size: 14px;
+    }
+
+    header .container .main-content img {
+        height: 38.93px;
+        width: 155.64px;
+
+    }
+    .intro .container .video-header h1 {
+        margin-left: 0;
+    }
+
+    .intro .container .content .video-container {
+        width: 800px;
+        height: auto;
+    }
+
+    .intro .container .content .video-container .video-header {
+        align-self: center;
+    }
+
+    .intro .container .content .video-container .video-header h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .intro .container .content .video-container .video-header p {
+        text-align: center;
+    }
+
+    .intro .container .content .form-container {
+        width: 800px;
+        height: auto;
+    }
+
+    .intro .container .content .form-container h2 {
+        width: 500px;
+        font-size: 30px;
+    }
+
+    .intro .container .content .form-container h3 {
+        font-size: 30px;
+    }
+
+    .intro .container .content .form-container form input {
+        width: 755px;
+        height: 70px;
+        font-size: 30px;
+    }
+    .intro .container .content .form-container form input[type = submit]{
+        height: 65.39px;
+        width: 463.07px;
+        margin-bottom: 50px;
+    }
+
+    .intro .container .content .form-container form .checkboxes {
+        width: 755px;
+    }
+
+    .intro .container .content .form-container form input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+    }
+
+    .intro .container .content .form-container form .checkboxes label span {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .intro .container .content .form-container form input[type = submit] {
+        width: 580px;
+        height: 100px;
+        border-radius: 100px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .intro .ribbon {
+        height: auto;
+    }
+
+    .intro .ribbon .logos {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .intro .ribbon .logos img {
+        margin-right: 50px;
+    }
+
+    .intro .ribbon .logos img:nth-child(1){
+        width: 196.92px;
+        height: 100px;
+    }
+
+    .intro .ribbon .logos img:nth-child(2){
+        width: 269.66px;
+        height: 50px;       
+    }
+
+    .intro .ribbon .logos img:nth-child(3){
+        width: 80px;
+        height: 80px;
+    }
+
+    .intro .ribbon .logos img:nth-child(4){
+        width: 157.56px;
+        height: 70px;       
+    }
+
+    .intro .ribbon .logos img:nth-child(5){
+        width: 232.22px;
+        height: 80px;      
+    }
+
+    .intro .ribbon .logos img:nth-child(6){
+        width: 107.14px;
+        height: 50px;     
+    }
+
+    .about .container .history {
+        width: 800px;
+    }
+
+    .about .container .history .about-intro {
+        font-size: 28px;
+    }
+
+    .about .container .history .paragraphs-container {
+        width: 800px;
+    }
+
+    .about .container .history .paragraphs-container .paragraphs {
+        width: 800px;
+    }
+
+    .about .container .history .paragraphs-container .paragraphs .history-paragraph {
+        width: 680px;
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .about .container .about-header {
+        width: 724px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .about .container .description p {
+        width: 350px;
+    }
+
+    .about .container .about-items .item {
+        width: 730px;
+        height: 113px;
+    }
+
+    .about .container .about-items .item img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .about .container .partners {
+        width: 600px;
+    }
+
+    .about .container .partners img {
+        margin: 5px;
+    }
+
+    .about .container .partners .first-line img:nth-child(1){
+        width: 35.1px;
+        height: 29.3px;
+    }  
+    .about .container .partners .first-line img:nth-child(2){
+        width: 41.8px;
+        height: 29.3px;
+    }  
+    .about .container .partners .first-line img:nth-child(3){
+        width: 99.66px;
+        height: 29.3px;
+    }  
+    .about .container .partners .first-line img:nth-child(4){
+        width: 101.3px;
+        height: 29.3px;
+    }
+    .about .container .partners .first-line img:nth-child(5){
+        width: 72.73px;
+        height: 29.3px;
+    }   
+    
+    .about .container .partners .second-line img:nth-child(1){
+        width: 86.75px;
+        height: 29.3px;
+    } 
+    .about .container .partners .second-line img:nth-child(2){
+        width: 73.7px;
+        height: 29.3px;
+    } 
+    .about .container .partners .second-line img:nth-child(3){
+        width: 146.12px;
+        height: 29.3px;
+    } 
+    .about .container .partners .second-line img:nth-child(4){
+        width: 40.95px;
+        height: 41.02px;
+    } 
+    .about .container .partners .second-line img:nth-child(5){
+        width: 41.02px;
+        height: 41.02px;
+    }
+
+    .about .container .market-leaders .item {
+        width: 630.51px;
+        height: 600px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .about .container .market-leaders .item .market-leaders-description {
+        height: auto;
+        width: 330px;
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .about .container .market-leaders .item .details-container {
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about .container .market-leaders .item h3 {
+        display: inline-block;
+        font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        height: 70px;
+    }
+
+    .about .container .about-items .item {
+        height: 200px;
+    }
+
+    .about .container .about-items .item img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .about .container .about-items .item .item-detail {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .about .container .about-items .item .item-detail h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .about .container .about-items .item .item-detail p {
+        font-size: 40px;
+        text-align: left;
+        line-height: 50px;
+    }
+
+    .about .container .market-leaders .item .details-container .details-inner p {
+        font-size: 20px;
+    }
+
+    .about .container .market-leaders .item .details-container img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about .container .market-leaders .item:nth-child(2) .details-container img {
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+
+    .about .container .market-leaders .item:nth-child(3) .details-container img {
+        margin-top: -10px;
+    }
+
+    .feedbacks .container .feedback-item {
+        flex-direction: column;
+        align-items: center;
+        width: 800px;
+    }
+
+    .feedbacks .container .feedback-item .avatar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .feedbacks .container .feedback-item .avatar img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .feedbacks .container .feedback-item .avatar div .name {
+        font-size: 40px;
+    }
+
+    .feedbacks .container .feedback-item .avatar div .info {
+        font-size: 30px;
+    }
+
+    .feedbacks .container .feedback-item .feedback-item-content p {
+        width: 100%;
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .how-works .container>h2 {
+        font-size: 50px;
+    }
+
+    .how-works .container .steps {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .how-works .container .steps hr {
+        margin-left: -280px;
+        margin-top: 60px;
+        width: 400px;
+    }
+
+    .how-works .container .steps .step-item {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 50px;
+        width: 800px;
+    }
+
+    .how-works .container .steps .step-item .step-header {
+        font-size: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+
+    .how-works .container .steps .step-item .steps-item-header {
+        width: 100%;
+        font-size: 35px;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .how-works .container .steps .step-item .steps-item-description {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .how-works .container .how-works-bottom {
+        height: 500px;
+    }
+
+    .how-works .container .how-works-bottom .start-now-link {
+        margin-bottom: 0;
+        width: 680px;
+        min-width: 680px;
+        height: 150px;
+        font-size: 40px;
+        border-radius: 80px;
+        margin-left: 50px;
+    }
+    
+    .how-works .container .how-works-bottom img:nth-child(1) {
+        margin-left: 350px;
+        margin-right: -350px;
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(3) {
+        margin-right: 300px;
+        margin-left: -300px;
+    }
+
+    .how-works .container img {
+        height: 386.71px;
+        width: 780px;
+    }
+
+    .faq .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .faq .container .faq-header {
+        font-size: 70px;
+    }
+
+    .faq .container .faq-caption {
+        font-size: 30px;
+    }
+
+    .faq .container .answers {
+        height: auto;
+    }
+
+    .faq .container .answers details {
+        width: 800px;
+        height: 80px;
+        margin-bottom: 30px;
+    }
+
+    .faq .container .answers details summary{
+        height: 80px;
+        font-size: 25px;
+    }
+
+    .faq .container .answers details summary .round-button {
+        width: 60px;
+        height: 60px;
+        font-size: 50px;
+    }
+
+    .faq .container .answers details p {
+        font-size: 20px;
+    }
+    
+
+    .footer .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer .container .links-list {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .container .links-list div {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer .container .links-list div a {
+        font-weight: 400;
+        margin-right: 30px;
+    }
+
+    .footer .container .links-list hr {
+        width: 288px;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer .risk-disclaimer p {
+        font-size: 30px;
+    }
+
+    .footer .rights {
+        font-size: 30px;
+    }
+}
+
 @media ( max-device-width: 480px ) {
     body {
         width: 100%;
@@ -1795,7 +2599,7 @@ details[open] summary .round-button {
     }
 
     header {
-        width: 885px;
+        width: 890px;
     }
     .menu-icon {
         right: -400px;
