@@ -972,6 +972,215 @@ details[open] summary .round-button {
     color: #f7f7f7;
 }
 
+@media ( min-width: 2601px ) and ( max-width: 3660px ){
+    header .container .main-content {
+        width: 2570px;
+    }
+
+    header .container .main-content .navigation a {
+        font-size: 20px;
+    }
+
+    .intro .container .content .video-container {
+        width: 1800px;
+        height: auto;
+        margin-right: 50px;
+    }
+
+    .intro .container .content .video-container .video {
+        height: 900px;
+    }
+
+    .intro .container .content .form-container {
+        width: 700px;
+        height: auto;
+    }
+
+    .intro .container .content .form-container h2 {
+        font-size: 30px;
+    }
+
+    .intro .container .content .form-container h3 {
+        font-size: 30px;
+    }
+
+    .intro .container .content .form-container form input {
+        width: 600px;
+        height: 70px;
+        font-size: 30px;
+    }
+
+    .intro .container .content .form-container form .checkboxes {
+        width: 600px;
+    }
+
+    .intro .container .content .form-container form input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+    }
+
+    .intro .container .content .form-container form .checkboxes label span {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .about .container .history .about-intro {
+        width: 2550px;
+        font-size: 30px;
+    }
+
+    .about .container .history div .paragraphs .history-paragraph {
+        width: 918px;
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .feedbacks .container .feedback-item .avatar img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .feedbacks .container .feedback-item .avatar .name {
+        font-size: 30px;
+    }
+
+    .feedbacks .container .feedback-item .avatar .info {
+        font-size: 30px;
+    }
+
+    .feedbacks .container .feedback-second-item .source {
+        font-size: 30px;
+    }
+
+    .feedbacks .container .feedback-item .feedback-item-content p {
+        width: 1997px;
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .feedbacks .container .feedback-item .feedback-item-content .source {
+        margin-top: 35px;
+    }
+
+    .how-works .container .steps .step-item {
+        width: 740px;
+    }
+
+    .how-works .container .steps .step-item .steps-item-description {
+        font-size: 30px;
+    }
+
+    .how-works .container .how-works-bottom {
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+
+    .how-works .container .how-works-bottom .start-now-link {
+        margin-right: 400px;
+        margin-left: 400px;
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(1) {
+        width: 564.42px;
+        height: 519.02px;
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(3) {
+        width: 781.65px;
+        height: 668.73px;
+    }
+
+    .faq .container .answers details {
+        width: 2550px;
+    }
+
+    .faq .container .answers details summary {
+        height: 80px;
+        font-size: 30px;
+    }
+
+    .faq .container .answers details p {
+        font-size: 30px;
+        width: 2550px;
+        max-width: 2550px;
+        line-height: 35px;
+    }
+
+    .faq .container .answers details summary .round-button {
+        width: 60px;
+        height: 60px;
+        font-size: 50px;
+    }
+
+    .footer .risk-disclaimer h2, .footer .risk-disclaimer p {
+        font-size: 30px;
+    }
+
+    .footer .rights {
+        font-size: 30px;
+    }
+}
+
+@media ( min-width: 1921px) and ( max-width: 2600px ){
+    header .container .main-content {
+        width: 1850px;
+    }
+
+    header .container .main-content .navigation a {
+        font-size: 20px;
+    }
+
+    .intro .container .content .video-container {
+        width: 1323px;
+        height: auto;
+        margin-right: 100px;
+    }
+
+    .about .container .history .about-intro {
+        width: 2000px;
+    }
+
+    .about .container .history div .paragraphs .history-paragraph {
+        width: 643px;
+    }
+
+    .feedbacks .container .feedback-item .feedback-item-content p {
+        width: 1497px;
+    }
+
+    .feedbacks .container .feedback-item .feedback-item-content .source {
+        margin-top: 35px;
+    }
+
+    .how-works .container .steps .step-item {
+        width: 640px;
+    }
+
+    .how-works .container .how-works-bottom {
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+
+    .how-works .container .how-works-bottom .start-now-link {
+        margin-right: 300px;
+        margin-left: 300px;
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(1) {
+        width: 564.42px;
+        height: 519.02px;
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(3) {
+        width: 781.65px;
+        height: 668.73px;
+    }
+
+    .faq .container .answers details {
+        width: 2000px;
+    }
+}
+
 @media ( max-width: 1680px ) {
     header .container .main-content {
         width: 1270px;
