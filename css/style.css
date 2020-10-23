@@ -973,6 +973,9 @@ details[open] summary .round-button {
 }
 
 @media ( min-width: 2601px ) and ( max-width: 3660px ){
+    body {
+        overflow-x: hidden;
+    }
     header .container .main-content {
         width: 2570px;
     }
@@ -1121,6 +1124,65 @@ details[open] summary .round-button {
     }
 }
 
+/* @media ( min-width: 2601px ) and ( max-width: 3100 ){
+    header .container .main-content {
+        width: 1850px;
+    }
+
+    header .container .main-content .navigation a {
+        font-size: 20px;
+    }
+
+    .intro .container .content .video-container {
+        width: 1323px;
+        height: auto;
+        margin-right: 100px;
+    }
+
+    .about .container .history .about-intro {
+        width: 2000px;
+    }
+
+    .about .container .history div .paragraphs .history-paragraph {
+        width: 643px;
+    }
+
+    .feedbacks .container .feedback-item .feedback-item-content p {
+        width: 1497px;
+    }
+
+    .feedbacks .container .feedback-item .feedback-item-content .source {
+        margin-top: 35px;
+    }
+
+    .how-works .container .steps .step-item {
+        width: 640px;
+    }
+
+    .how-works .container .how-works-bottom {
+        margin-top: 100px;
+    }
+
+    .how-works .container .how-works-bottom .start-now-link {
+        margin-right: 300px;
+        margin-left: 300px;
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(1) {
+        width: 564.42px;
+        height: 519.02px;
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(3) {
+        width: 781.65px;
+        height: 668.73px;
+    }
+
+    .faq .container .answers details {
+        width: 2000px;
+    }
+} */
+
 @media ( min-width: 1921px) and ( max-width: 2600px ){
     header .container .main-content {
         width: 1850px;
@@ -1158,12 +1220,11 @@ details[open] summary .round-button {
 
     .how-works .container .how-works-bottom {
         margin-top: 100px;
-        margin-left: 200px;
     }
 
     .how-works .container .how-works-bottom .start-now-link {
-        margin-right: 300px;
-        margin-left: 300px;
+        margin-right: 150px;
+        margin-left: 150px;
     }
 
     .how-works .container .how-works-bottom img:nth-child(1) {
@@ -1174,6 +1235,7 @@ details[open] summary .round-button {
     .how-works .container .how-works-bottom img:nth-child(3) {
         width: 781.65px;
         height: 668.73px;
+        z-index: -1;
     }
 
     .faq .container .answers details {
