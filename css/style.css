@@ -159,7 +159,6 @@ header .container .main-content .navigation{
     flex-wrap: wrap;
     justify-content: center;
     align-self: flex-end;
-    margin-bottom: 8px;
     margin-left: 10px;
 }
 header .container .main-content .navigation a {
@@ -175,7 +174,6 @@ header .container .main-content .navigation a:active {
     font-weight: 700;
 }
 header .container .main-content img {
-  margin-left: 100px;
   margin-right: 40px;
 }
 header .container .header-country {
@@ -227,12 +225,14 @@ main {
 
 .intro {
   width: 100%;
-  background-image: url('../images/bg\ 1920-1680\ home.png');
+  background-image:  linear-gradient(296.62deg, #FBA11A 15.06%, #FDC602 101.91%);
+  /* background-color: orange; */
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
 }
 .intro .container {
+    background-image: url('../images/bg map home 2600.png');
     width: 100%;
     height: auto;
     display: flex;
@@ -615,9 +615,7 @@ main {
 }
 
 .feedbacks {
-    background-image: url('../images/bg\ 1920-1680\ testimonials.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(113.07deg, #FFC700 0.62%, #FF9900 66.15%);
 }
 
 .feedbacks .container {
@@ -625,6 +623,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background-image: url("../images/bg\ map\ testimonials\ 2600.png");
 }
 
 .feedbacks .container .feedbacks-header {
@@ -1654,6 +1653,7 @@ details[open] summary .round-button {
         font-size: 14px;
     }
 }
+
 @media ( max-width: 1024px ) {
     header .container {
         justify-content: center;
@@ -1925,6 +1925,12 @@ details[open] summary .round-button {
 @media ( max-width: 1000px ) {
     header .container .main-content {
         width: 100%;
+        justify-content: center;
+    }
+
+    header .container .main-content img {
+        width: 125px;
+        height: 75px;
     }
 
     header .container .main-content .navigation {
@@ -2193,9 +2199,8 @@ details[open] summary .round-button {
     }
 
     header .container .main-content img {
-        height: 38.93px;
-        width: 155.64px;
-
+        width: 125px;
+        height: 75px;
     }
 
     .about .container .about-header {
