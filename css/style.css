@@ -614,19 +614,20 @@ main {
     margin-top: 5px;
 }
 
-.feedbacks {
+.growth {
     background-image: linear-gradient(113.07deg, #FFC700 0.62%, #FF9900 66.15%);
 }
 
-.feedbacks .container {
+.growth .container {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     background-image: url("../images/bg\ map\ testimonials\ 2600.png");
+    margin-bottom: 100px;
 }
 
-.feedbacks .container .feedbacks-header {
+.growth .container .growth-header {
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -636,70 +637,75 @@ main {
     margin-bottom: 10px;
 }
 
-.feedbacks .container .feedbacks-subheader {
-    width: 855px;
+.growth .container .growth-subheader {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 36px;
-    line-height: 54px;
-    text-align: center;
-    color: white;
-    margin-top: 10px;
-}
-
-.feedbacks .container .feedback-item {
-    display: flex;
-    justify-content: center;
-}
-
-.feedback-second-item {
-    flex-direction: row-reverse;
-}
-
-.feedback-second-item .feedback-item-content {
-    margin-right: 50px;
-}
-
-.feedback-second-item .avatar {
-    margin-top: -60px;
-}
-
-.feedbacks .container .feedback-item .avatar {
-    margin-right: 50px;
-}
-
-.feedbacks .container .feedback-item .avatar .name {
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 14px;
-    color: white;
-}
-
-.feedbacks .container .feedback-item .avatar .info {
-    font-size: 18px;
-    text-align: center;
-    margin-top: 14px;
-    color: white;
-}
-
-.feedbacks .container .feedback-item .feedback-item-content p {
-    width: 1112px;
-    font-family: Poppins;
     font-size: 18px;
     line-height: 27px;
+    text-align: center;
     color: white;
+    margin-top: 10px;
 }
 
-.feedbacks .container .feedback-item .feedback-item-content .source {
-    display: inline-block;
-    margin-top: 10px;
-    color: white;
+.growth .container .graph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.feedbacks .container .feedback-second-item .feedback-item-content p {
-    margin-top: 10px;
+.growth .container .graph .img-3000, .growth .container .graph .img-1680, .growth .container .graph .img-1280,
+.growth .container .graph .img-768, .growth .container .graph .img-480,
+.growth .container .graph .img-320 {
+    display: none;
+}
+
+.growth .container .graph .period {
+    width: 919px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.growth .container .graph .period span {
+    font-size: 18px;
+    color: #606060;
+}
+
+.growth .container .few-things {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 20px;
+    width: 540px;
+    height: 555.6px;
+}
+
+.growth .container .few-things img {
+    margin-top: 70px;
+}
+
+.growth .container .few-things h3 {
+    font-size: 20px;
+}
+
+.growth .container .few-things .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 70px;
+}
+
+.growth .container .few-things .info p {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+
+.growth .container .few-things .info p span {
+    font-weight: bold;
 }
 
 .how-works .container {
@@ -1037,31 +1043,21 @@ details[open] summary .round-button {
         line-height: 45px;
     }
 
-    .feedbacks .container .feedback-item .avatar img {
-        width: 240px;
-        height: 240px;
+    .growth .container .growth-header {
+        width: 100%;
     }
 
-    .feedbacks .container .feedback-item .avatar .name {
-        font-size: 30px;
+    .growth .container .graph .img-1920 {
+        display: none;
     }
 
-    .feedbacks .container .feedback-item .avatar .info {
-        font-size: 30px;
+    .growth .container .graph .img-3000 {
+        display: block;
     }
 
-    .feedbacks .container .feedback-second-item .source {
-        font-size: 30px;
-    }
 
-    .feedbacks .container .feedback-item .feedback-item-content p {
-        width: 1997px;
-        font-size: 30px;
-        line-height: 45px;
-    }
-
-    .feedbacks .container .feedback-item .feedback-item-content .source {
-        margin-top: 35px;
+    .growth .container .few-things {
+        width: 647px;
     }
 
     .how-works .container .steps .step-item {
@@ -1205,12 +1201,17 @@ details[open] summary .round-button {
         width: 643px;
     }
 
-    .feedbacks .container .feedback-item .feedback-item-content p {
-        width: 1497px;
+    .growth .container .graph .img-1920 {
+        display: none;
     }
 
-    .feedbacks .container .feedback-item .feedback-item-content .source {
-        margin-top: 35px;
+    .growth .container .graph .img-3000 {
+        display: block;
+    }
+
+
+    .growth .container .few-things {
+        width: 647px;
     }
 
     .how-works .container .steps .step-item {
@@ -1343,6 +1344,14 @@ details[open] summary .round-button {
         margin-top: -40px;
     }
 
+    .growth .container .graph .img-1920 {
+        display: none;
+    }
+
+    .growth .container .graph .img-1680 {
+        display: block;
+    }
+
     .how-works .container .steps {
         display: flex;
         justify-content: center;
@@ -1398,7 +1407,6 @@ details[open] summary .round-button {
     .how-works .container .how-works-bottom .start-now-link {
         margin-left: 100px;
         margin-right: 100px;
-
     }
 
     .faq .container {
@@ -1467,20 +1475,6 @@ details[open] summary .round-button {
 
     .intro .container .content .form-container form .checkboxes {
         width: 258.04px;
-    }
-
-    .feedbacks .container .feedback-item .avatar .name {
-        font-size: 18px;
-    }
-
-    .feedbacks .container .feedback-item .avatar .info {
-        font-size: 14px;
-        margin-top: 18px;
-    }
-
-    .feedbacks .container .feedback-item .feedback-item-content p {
-        font-size: 14px;
-        width: 625px;
     }
 
     .about .container .history {
@@ -1560,6 +1554,32 @@ details[open] summary .round-button {
         margin-top: -40px;
     }
 
+    .growth .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .growth .container .graph .img-1680 {
+        display: none;
+    }
+
+    .growth .container .graph .img-1280 {
+        display: block;
+    }
+
+    .growth .container .few-things {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 801px;
+        height: 405.6px;
+    }
+
+    .growth .container .few-things .info {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+
     .how-works .container>h2 {
         font-size: 42px;
     }
@@ -1589,6 +1609,7 @@ details[open] summary .round-button {
 
     .how-works .container .how-works-bottom {
         margin-left: 0;
+        width: 100%;
     }
     
     .how-works .container .how-works-bottom .start-now-link {
@@ -1734,20 +1755,6 @@ details[open] summary .round-button {
     .intro .ribbon .logos img:nth-child(6){
         width: 63.21px;
         height: 29.5px;       
-    }
-
-    .feedbacks .container .feedback-item .avatar .name {
-        font-size: 18px;
-    }
-
-    .feedbacks .container .feedback-item .avatar .info {
-        font-size: 14px;
-        margin-top: 18px;
-    }
-
-    .feedbacks .container .feedback-item .feedback-item-content p {
-        font-size: 14px;
-        width: 625px;
     }
 
     .about .container .history {
@@ -2015,6 +2022,7 @@ details[open] summary .round-button {
         height: 29.5px;       
     }
 
+
     .about .container .history {
         width: 800px;
     }
@@ -2231,18 +2239,18 @@ details[open] summary .round-button {
         width: 319px;
     }
 
-    .feedbacks .container .feedbacks-subheader {
+    .growth .container .graph .img-1280 {
+        display: none;
+    }
+
+    .growth .container .graph .img-768 {
+        display: block;
+    }
+
+    .growth .container .few-things {
         width: 668px;
+        height: 435.6px;
     }
-
-    .feedbacks .container .feedback-item .feedback-item-content p {
-        width: 431px;
-    }
-
-    .feedbacks .container .feedback-item .feedback-item-content .source {
-        margin-top: 20px;
-    }
-    
 
     .how-works .container>h2 {
         font-size: 42px;
@@ -2329,6 +2337,37 @@ details[open] summary .round-button {
     }
 }
 
+@media ( max-width: 700px ) {
+    body {
+        width: 850px;
+    }
+}
+
+@media ( max-width: 690px ) {
+    .growth .container .graph .img-768 {
+        display: none;
+    }
+
+    .growth .container .graph .img-480 {
+        display: block;
+    }
+
+    .growth .container .few-things {
+        width: 420px;
+        height: 585.6px;
+    }
+
+    .growth .container .few-things h3 {
+        width: 360px;
+        text-align: center;
+    }
+
+    .growth .container .few-things .info {
+        flex-direction: column;
+        margin-left: 50px;
+    }
+}
+
 @media ( max-device-width: 540px ) {
     body {
         width: 100%;
@@ -2394,11 +2433,6 @@ details[open] summary .round-button {
         font-size: 14px;
     }
 
-    header .container .main-content img {
-        height: 38.93px;
-        width: 155.64px;
-
-    }
     .intro .container .video-header h1 {
         margin-left: 0;
     }
@@ -2865,7 +2899,7 @@ details[open] summary .round-button {
 
 @media ( max-device-width: 480px ) {
     body {
-        width: 100%;
+        width: 890px;
         margin: 0;
         overflow-x: hidden;
     }
@@ -2934,11 +2968,6 @@ details[open] summary .round-button {
         font-size: 14px;
     }
 
-    header .container .main-content img {
-        height: 38.93px;
-        width: 155.64px;
-
-    }
     .intro .container .video-header h1 {
         margin-left: 0;
     }
@@ -3220,38 +3249,37 @@ details[open] summary .round-button {
     .about .container .market-leaders .item:nth-child(3) .details-container img {
         margin-top: -10px;
     }
-
-    .feedbacks .container .feedback-item {
-        flex-direction: column;
-        align-items: center;
-        width: 800px;
+    
+    .growth .container .graph .img-768 {
+        display: none;
     }
 
-    .feedbacks .container .feedback-item .avatar {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
+    .growth .container .graph .img-480 {
+        display: block;
     }
 
-    .feedbacks .container .feedback-item .avatar img {
-        width: 300px;
-        height: 300px;
+    .growth .container .graph img {
+        width: 830px;
     }
 
-    .feedbacks .container .feedback-item .avatar div .name {
-        font-size: 40px;
+    .growth .container .few-things {
+        width: 830px;
+        height: auto;
+        border-radius: 35px;
     }
 
-    .feedbacks .container .feedback-item .avatar div .info {
-        font-size: 30px;
-    }
-
-    .feedbacks .container .feedback-item .feedback-item-content p {
-        width: 100%;
+    .growth .container .few-things h3 {
+        width: auto;
         font-size: 35px;
-        line-height: 50px;
+    }
+
+    .growth .container .few-things .info {
+        margin-left: 100px;
+        margin-bottom: 50px;
+    }
+
+    .growth .container .few-things .info div p {
+        font-size: 35px;
     }
 
     .how-works .container>h2 {
@@ -3431,7 +3459,7 @@ details[open] summary .round-button {
         display: flex;
         flex-direction: column;
         top: 0;
-        right: -550px;
+        right: -600px;
         width: 310px;
         align-items: flex-start;
     }
@@ -3455,13 +3483,6 @@ details[open] summary .round-button {
 
     header .container {
         align-items: flex-start;
-    }
-
-    header .container .main-content img {
-        margin-top: 10px;
-        height: 100px;
-        width: 400px;
-
     }
 
     .intro .container .content .video-container {
@@ -3529,6 +3550,14 @@ details[open] summary .round-button {
     .intro .container .content .form-container form .checkboxes label span {
         font-size: 30px;
         line-height: 50px;
+    }
+
+    .growth .container .graph .img-480 {
+        display: none;
+    }
+
+    .growth .container .graph .img-320 {
+        display: block;
     }
 
     .about .container .about-header {
