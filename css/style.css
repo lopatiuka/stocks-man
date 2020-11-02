@@ -620,11 +620,16 @@ main {
 
 .growth .container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-image: url("../images/bg\ map\ testimonials\ 2600.png");
     margin-bottom: 100px;
+}
+
+.growth .container .graphs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .growth .container .growth-header {
@@ -977,7 +982,7 @@ details[open] summary .round-button {
     color: #f7f7f7;
 }
 
-@media ( min-width: 2601px ) and ( max-width: 3660px ){
+@media ( min-width: 2601px ){
     body {
         overflow-x: hidden;
     }
@@ -1219,7 +1224,7 @@ details[open] summary .round-button {
     }
 
     .how-works .container .how-works-bottom {
-        margin-top: 100px;
+        margin-top: 150px;
     }
 
     .how-works .container .how-works-bottom .start-now-link {
@@ -1555,6 +1560,11 @@ details[open] summary .round-button {
     }
 
     .growth .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .growth .container .graphs {
         flex-direction: column;
         align-items: center;
     }
