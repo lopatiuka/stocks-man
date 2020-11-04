@@ -95,7 +95,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;  
-  background-color: black;
+  background-color: none;
+  margin-bottom: -114px;
 }
 
 header .container {
@@ -106,6 +107,7 @@ header .container {
   justify-content: center;
   align-items: center;
 }
+
 header .container .main-content {
     display: flex;
   flex-direction: row;
@@ -113,6 +115,11 @@ header .container .main-content {
   align-items: center;
   flex-wrap: wrap;
   width: 1682px;
+}
+
+header .container .main-content img {
+    width: 242px;
+    height: 62px;    
 }
 
 header .exposure{
@@ -158,8 +165,9 @@ header .container .main-content .navigation{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-self: flex-end;
+    align-self: center;
     margin-left: 10px;
+    margin-top: 5px;
 }
 header .container .main-content .navigation a {
     margin-right: 30px;
@@ -240,7 +248,7 @@ main {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 170px;
 }
 
 .intro .container .content {
