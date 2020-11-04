@@ -1132,65 +1132,6 @@ details[open] summary .round-button {
     }
 }
 
-/* @media ( min-width: 2601px ) and ( max-width: 3100 ){
-    header .container .main-content {
-        width: 1850px;
-    }
-
-    header .container .main-content .navigation a {
-        font-size: 20px;
-    }
-
-    .intro .container .content .video-container {
-        width: 1323px;
-        height: auto;
-        margin-right: 100px;
-    }
-
-    .about .container .history .about-intro {
-        width: 2000px;
-    }
-
-    .about .container .history div .paragraphs .history-paragraph {
-        width: 643px;
-    }
-
-    .feedbacks .container .feedback-item .feedback-item-content p {
-        width: 1497px;
-    }
-
-    .feedbacks .container .feedback-item .feedback-item-content .source {
-        margin-top: 35px;
-    }
-
-    .how-works .container .steps .step-item {
-        width: 640px;
-    }
-
-    .how-works .container .how-works-bottom {
-        margin-top: 100px;
-    }
-
-    .how-works .container .how-works-bottom .start-now-link {
-        margin-right: 300px;
-        margin-left: 300px;
-    }
-
-    .how-works .container .how-works-bottom img:nth-child(1) {
-        width: 564.42px;
-        height: 519.02px;
-    }
-
-    .how-works .container .how-works-bottom img:nth-child(3) {
-        width: 781.65px;
-        height: 668.73px;
-    }
-
-    .faq .container .answers details {
-        width: 2000px;
-    }
-} */
-
 @media ( min-width: 1921px) and ( max-width: 2600px ){
     header .container .main-content {
         width: 1850px;
@@ -1953,11 +1894,6 @@ details[open] summary .round-button {
         justify-content: center;
     }
 
-    header .container .main-content img {
-        width: 125px;
-        height: 75px;
-    }
-
     header .container .main-content .navigation {
         display: none;
         position: absolute;
@@ -2224,11 +2160,6 @@ details[open] summary .round-button {
         font-size: 14px;
     }
 
-    header .container .main-content img {
-        width: 125px;
-        height: 75px;
-    }
-
     .about .container .about-header {
         width: 524px;
     }
@@ -2359,6 +2290,10 @@ details[open] summary .round-button {
     body {
         width: 850px;
     }
+
+    header .exposure {
+        right: -180px;
+    }
 }
 
 @media ( max-width: 690px ) {
@@ -2383,6 +2318,12 @@ details[open] summary .round-button {
     .growth .container .few-things .info {
         flex-direction: column;
         margin-left: 50px;
+    }
+}
+
+@media ( max-width: 617px ) {
+    header .exposure {
+        right: -230px;
     }
 }
 
@@ -3449,6 +3390,12 @@ details[open] summary .round-button {
     }
 }
 
+@media ( max-device-width: 400px ) {
+    header .exposure {
+        right: -500px;
+    }
+}
+
 @media ( max-device-width: 320px ) {
     body {
         width: 870px;
@@ -3477,7 +3424,7 @@ details[open] summary .round-button {
         display: flex;
         flex-direction: column;
         top: 0;
-        right: -600px;
+        right: -650px;
         width: 310px;
         align-items: flex-start;
     }
@@ -3490,12 +3437,12 @@ details[open] summary .round-button {
     }
 
     header .exposure .country p {
-        font-size: 25px;
+        font-size: 18px;
         margin-left: 10px;
     }
 
     header .exposure .caption {
-        font-size: 25px;
+        font-size: 18px;
     }
   
 
