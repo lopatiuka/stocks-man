@@ -283,7 +283,7 @@ main {
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
-    font-size: 76px;
+    font-size: 74px;
     line-height: 105px;
     text-align: left;
     text-transform: uppercase;
@@ -985,6 +985,41 @@ details[open] summary .round-button {
     margin-top: 30px;
 }
 
+.footer .container .links-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 70px;
+    width: 100%;
+}
+
+.footer .container .links-list hr {
+    margin-right: 50px;
+    margin-left: 0;
+    background-color: #C2C2C2;
+}
+
+.footer .container .links-list div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 50px;
+}
+
+.footer .container .links-list div a {
+    margin: 10px;
+    text-decoration: none;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+
+    color: #C2C2C2;
+}
+
 .footer .risk-disclaimer {
     display: flex;
     flex-direction: column;
@@ -1237,7 +1272,7 @@ details[open] summary .round-button {
 
     .intro .container .content .video-container .video-header h1 {
         font-weight: 700;
-        font-size: 60px;
+        font-size: 58px;
         width: 1300px;
     }
 
@@ -1645,6 +1680,10 @@ details[open] summary .round-button {
 
     .faq .container .answers details p {
         font-size: 14px;
+    }
+
+    .footer .container .links-list div {
+        margin-right: 20px;
     }
 
     .footer .container .links-list div a {
@@ -2179,6 +2218,15 @@ details[open] summary .round-button {
 
     .footer .container .links-list div a {
         font-size: 14px;
+    }
+
+    .footer .container .links-list div:last-child {
+        margin-right: 0;
+    }
+
+    .footer .container .links-list hr {
+        margin-left: 20px;
+
     }
 
     .footer .risk-disclaimer h2 {
