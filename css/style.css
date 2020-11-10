@@ -1686,6 +1686,10 @@ details[open] summary .round-button {
         margin-right: 20px;
     }
 
+    .footer .container .links-list hr {
+        margin-right: 20px;
+    }
+
     .footer .container .links-list div a {
         font-size: 14px;
     }
@@ -2222,11 +2226,6 @@ details[open] summary .round-button {
 
     .footer .container .links-list div:last-child {
         margin-right: 0;
-    }
-
-    .footer .container .links-list hr {
-        margin-left: 20px;
-
     }
 
     .footer .risk-disclaimer h2 {
