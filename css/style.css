@@ -248,7 +248,7 @@ main {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 170px;
+    margin-top: 100px;
 }
 
 .intro .container .content {
@@ -276,7 +276,7 @@ main {
 
 .intro .container .content .video-header {
     align-self: flex-start;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .intro .container .content .video-header h1 {
@@ -289,6 +289,7 @@ main {
     text-transform: uppercase;
     color: white;
     margin-bottom: 0;
+    margin-top: 0;
     width: 1650px;
 }
 
@@ -1278,7 +1279,7 @@ details[open] summary .round-button {
 
     .intro .container .content .video-container .video-header {
         align-self: flex-start;
-        margin-bottom: 70px;
+        margin-bottom: 10px;
     }
 
     .intro .container .content .form-container {
