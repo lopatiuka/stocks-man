@@ -508,10 +508,13 @@ main {
     color: #2E2E2E;
 }
 
-.about .container .about-subheader img {
-    margin-top: 20px;
+.about .container .about-header img {
+    margin-top: 30px;
     margin-left:10px;
     margin-right: 10px;
+    margin-bottom: -20px;
+    width: 210px;
+    height: 56px;
 }
 
 .about .container .history {
