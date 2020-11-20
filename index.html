@@ -24,27 +24,9 @@
     <body>
         <div class="wrapper">
             <header>
-                <div id = "menu-container" class = "menu-container hidden">
-                    <p id = "hide-menu" class = "hide">&#10006;</p>
-                    <div class = "menu-links">
-                        <a id = "home-link" href="https://traders.expert/" target="_blank">Home</a>
-                        <a id = "what-we-do-link"  href="https://traders.expert/" target="_blank">About Amazon</a>
-                        <a id = "leaders-link"  href="https://traders.expert/" target="_blank">Testimonials</a>
-                        <a id = "how-works-link" href = "https://traders.expert/" target="_blank">How it works</a>
-                        <a id = "faq-link" href = "https://traders.expert/" target="_blank">FAQ</a>
-                    </div>
-                </div>
                 <div class = "container">
                     <div class = "main-content">
                         <img src = "images/stocks man logo 2.png">
-                        <div class = "navigation">
-                            <a id = "home-link" href="https://traders.expert/" target="_blank">Home</a>
-                            <a id = "what-we-do-link"  href="https://traders.expert/" target="_blank">About Amazon</a>
-                            <a id = "leaders-link"  href="https://traders.expert/" target="_blank">Testimonials</a>
-                            <a id = "how-works-link" href = "https://traders.expert/" target="_blank">How it works</a>
-                            <a id = "faq-link" href = "https://traders.expert/" target="_blank">FAQ</a>
-                            </nav>
-                        </div>
                     </div>
                 </div>
                 <div class = "exposure">
@@ -52,11 +34,6 @@
                     <div class = "country">
                         <img id = "flag"><p id = "location"></p>
                     </div>
-                </div>
-                <div id = "menu-icon" class = "menu-icon">
-                    <div class = "line"></div>
-                    <div class = "line"></div>
-                    <div class = "line"></div>
                 </div>
             </header>
             <main class = "main">
@@ -325,17 +302,6 @@
             </footer>
         </div>
         <script>
-            let showMenu = () => {
-                document.getElementById( "menu-container" ).classList.remove("hidden");
-            }
-
-            let hideMenu = () => {
-                document.getElementById( "menu-container" ).classList.add("hidden");
-            }
-
-            document.getElementById( "menu-icon" ).addEventListener( "click", showMenu );
-            document.getElementById( "hide-menu" ).addEventListener( "click", hideMenu );
-
             $("#start-link").click(function() { 
                 $('html, body').animate({
                     scrollTop: $("#form").offset().top
