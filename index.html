@@ -6,6 +6,8 @@
         <title>Stocks Man</title>
         <link rel = "stylesheet" href = "css/style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
          <!-- BEGIN intgrtn -->
          <script type="text/javascript">
@@ -41,24 +43,24 @@
                     <div class = "container">
                         <div class = "content">   
                             <div class = "video-container"> 
-                                <div class = "video-header">
+                                <div class = "video-header" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
                                     <h1>AMAZON INC.</br>
                                         Perhaps the best stock to invest in 2020!
                                     </h1>
                                 </div>
-                                <p class="video-caption">
+                                <p class="video-caption" data-aos="fade-down" data-aos-duration="1000">
                                     Tech stocks like Amazon are skyrocketing! People have been investing in stocks for 
                                     hundreds of years. Recently millions have been investing in tech stocks. Amazon stocks started 
                                     their journey in 1997, priced at $18 per share. Today they are worth more than $3,100. That a 
                                     growth of over 17,000% in 23 years! You still want to wait and see what going to happen?
                                 </p>
-                                <div class = "video">
+                                <div class = "video" data-aos="fade-right" data-aos-duration="1500">
                                     <iframe id = "iframe-video" width="100%" height="100%" src="https://www.youtube.com/embed/Ch0dZalBJEQ"
                                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                                     </iframe>
                                 </div>
                             </div>
-                            <div id = "form" class = "form-container">
+                            <div id = "form" class = "form-container" data-aos="fade-left" data-aos-duration="1500">
                                     <img src = "images/logo-1.png">
                                     <h2 class = "form-header">Fill in the form & Join our Stock Followers Community</h2>
                                     <h3>STEP 1</h3>
@@ -144,15 +146,15 @@
                         </p>
                         <div class = "graphs">
                             <div class="graph">
-                                <img class = "img-3000" src="images/Graph.png">
-                                <img class = "img-1920" src = "images/Graph 1920.png">
-                                <img class = "img-1680" src = "images/Graph 1620.png">
-                                <img class = "img-1280" src = "images/Graph-1280.png">
-                                <img class = "img-768" src = "images/Graph 768.png">
-                                <img class = "img-480" src = "images/graph 480.png">
-                                <img class = "img-320" src = "images/graph 320.png">
+                                <img class = "img-3000" src="images/Graph.png" data-aos="zoom-in" data-aos-duration="1000">
+                                <img class = "img-1920" src = "images/Graph 1920.png" data-aos="zoom-in" data-aos-duration="1000">
+                                <img class = "img-1680" src = "images/Graph 1620.png" data-aos="zoom-in" data-aos-duration="1000">
+                                <img class = "img-1280" src = "images/Graph-1280.png" data-aos="zoom-in" data-aos-duration="1000">
+                                <img class = "img-768" src = "images/Graph 768.png" data-aos="zoom-in" data-aos-duration="1000">
+                                <img class = "img-480" src = "images/graph 480.png" data-aos="zoom-in" data-aos-duration="1000">
+                                <img class = "img-320" src = "images/graph 320.png" data-aos="zoom-in" data-aos-duration="1000">
                             </div>
-                            <div class = "few-things">
+                            <div class = "few-things" data-aos="zoom-in" data-aos-duration="1000">
                                 <img src = "images/amazon logo 2.png">
                                 <h3 class = "header">Here are a few things about Amazon Inc</h3>
                                 <div class = "info">
@@ -176,7 +178,7 @@
                     <div class = "container">
                         <h2>SO WHAT SHOULD YOU DO NEXT?</h2>
                         <div class = "steps">
-                            <div class = "step-item">
+                            <div class = "step-item" data-aos="flip-right" data-aos-duration="1000">
                                 <p class = "step-header">Step #1</p>
                                 <h2 class = "steps-item-header">
                                     Fill Out The Registration Form on This Page
@@ -186,7 +188,7 @@
                                     community. You will then be directed towards one of our handpicked partner brokers.
                                 </p>
                             </div>
-                            <div class = "step-item">
+                            <div class = "step-item" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100">
                                 <p class = "step-header">Step #2</p>
                                 <h2 class = "steps-item-header">
                                     Fund Your Account
@@ -197,7 +199,7 @@
                                     between 500 to 1000 USD.
                                 </p>
                             </div>
-                            <div class = "step-item">
+                            <div class = "step-item" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
                                 <p class = "step-header">Step #3</p>
                                 <h2 class = "steps-item-header">
                                     Start Trading
@@ -208,9 +210,11 @@
                             </div>
                         </div>
                         <div class = "how-works-bottom">
-                            <img src = "images/img 1.png">
-                            <a href = "#form" id = "start-link" class = "start-now-link">REGISTER</a>
-                            <img src = "images/img 2.png">
+                            <img src = "images/img 1.png" data-aos="fade-right" data-aos-duration="1000">
+                            <div data-aos="fade-down" data-aos-duration="1000">
+                                <a href = "#form" id = "start-link" class = "start-now-link">REGISTER</a>
+                            </div>
+                            <img src = "images/img 2.png" data-aos="fade-left" data-aos-duration="1000">
                         </div>
                     </div>
                 </section>
@@ -219,7 +223,7 @@
                         <h2 class = "faq-header">FAQ</h2>
                         <p class = "faq-caption">Frequently Asked Questions</p>
                         <div class = "answers">
-                           <details>
+                           <details data-aos="fade-up" data-aos-duration="1000">
                                <summary> <div class = "round-button">+</div>How much can I earn from Amazon Stocks?</summary>
                                     <p>This is a subjective question. Earning from stocks can relate to both your entry time and 
                                         position. In general, in 2020, Amazon Inc Stocks increased their value from 1771 USD per 
@@ -227,14 +231,14 @@
                                         one could have gained that year.
                                     </p>
                            </details>
-                           <details>
+                           <details data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                                 <summary> <div class = "round-button">+</div>Where can I buy or trade Amazon Stocks?</summary>
                                 <p>Most stocks are being traded on the stock markets and are available for purchase via financial 
                                     institutions. We also offer a variety of alternative investments you can make with additional 
                                     brokers for both investing and buying stocks or stock contracts for difference.
                                 </p>
                             </details>
-                            <details>
+                            <details data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                                 <summary> <div class = "round-button">+</div>How much time will it require from me?</summary>
                                 <p>The time investment in any new venture we choose to go for, is subject to each individual's 
                                     personal choice. In reality, opening an account, verifying it and purchasing your first assets, 
@@ -242,7 +246,7 @@
                                     depositing funds and buying a stock.
                                 </p>
                             </details>
-                            <details>
+                            <details data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                                 <summary> <div class = "round-button">+</div>Is my information safe?</summary>
                                 <p>We take data security and privacy very seriously. Both us and our recommended partners are in full 
                                     compliance with KYC, AML, Privacy Policies, Terms of Use (EULA) and most importantly GDPR 
@@ -250,7 +254,7 @@
                                     requirements.
                                 </p>
                             </details>
-                            <details>
+                            <details data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                                 <summary> <div class = "round-button">+</div>What should I do next?</summary>
                                 <p>If you’ve decided to move forward and pursue this venture, please go ahead and create your watch 
                                     list, set up an account with one of our recommended partners and you'll be good to go!
@@ -301,6 +305,9 @@
                 <p class = "rights">© 2020 All Rights Reserved | The Stocks Man, is a <a href = "https://mr.click/" target="_blank">Mr.Click</a> brand operated by Blue Media LTD</p>
             </footer>
         </div>
+        <script>
+            AOS.init();
+        </script>
         <script>
             $("#start-link").click(function() { 
                 $('html, body').animate({
