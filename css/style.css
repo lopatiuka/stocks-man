@@ -981,7 +981,7 @@ details[open] summary .round-button {
 
 .footer .container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -991,50 +991,39 @@ details[open] summary .round-button {
 
 .footer .container .links-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
     margin: 70px;
     width: 100%;
+    color: #527C6F;
 }
 
-.footer .container .links-list hr {
-    margin-right: 50px;
-    margin-left: 0;
-    background-color: #C2C2C2;
-}
-
-.footer .container .links-list div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-right: 50px;
-}
-
-.footer .container .links-list div a {
-    margin: 10px;
+.footer .container .links-list a {
+    margin: 18px;
     text-decoration: none;
-
-    font-family: Poppins;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 18px;
     line-height: 150%;
-
-    color: #C2C2C2;
+    color: white;
 }
 
 .footer .risk-disclaimer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    color: #FDFDFD;
-    width: 80%;
+    align-items: flex-start;
+    color: #C2C2C2;
 }
 
-.footer .risk-disclaimer h2, .footer .risk-disclaimer p {
-    text-align: center;
+.footer .risk-disclaimer h2 {
+    text-align: left;
+}
+
+.footer .risk-disclaimer p {
+    max-width: 1679px;
+    text-align: left;
 }
 
 .footer .rights {
@@ -1042,15 +1031,103 @@ details[open] summary .round-button {
     font-weight: normal;
     font-size: 18px;
     line-height: 150%;
-    color: #FDFDFD;
+    color: #C2C2C2;
     margin-top: 0;
     margin-bottom: 50px;
-    text-align: center;
+    text-align: left;
 }
 
 .footer .rights a {
     text-decoration: none;
     color: #f7f7f7;
+}
+
+.footer .container hr {
+    width: 405px;
+    size: 1px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer .container .legal-disclaimers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .container .legal-disclaimers h2 {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #C2C2C2;
+}
+
+.footer .container .legal-disclaimers .spoilers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .container .legal-disclaimers .spoilers .column-spoilers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .container .legal-disclaimers .spoilers .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 682px;
+    margin: 10px;
+}
+
+.footer .container .legal-disclaimers .spoilers .details .summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 62px;
+    background: #333333;
+    border-radius: 15px;
+}
+
+.footer .container .legal-disclaimers .spoilers .details .summary:hover {
+    cursor: pointer;
+}
+
+.footer .container .legal-disclaimers .spoilers .details .summary p {
+    font-size: 22px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.footer .container .legal-disclaimers .spoilers .details .summary .arrow {
+    width: 10px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+    margin-right: 20px;
+}
+
+.footer .container .legal-disclaimers .spoilers .details .summary .rotated-arrow {
+    transform: rotate(-135deg);
+}
+
+.footer .container .legal-disclaimers .spoilers .details .opening {
+    display: none;
+}
+
+.footer .container .legal-disclaimers .spoilers .details .opening p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #C2C2C2;
 }
 
 @media ( min-width: 2601px ){
@@ -1186,13 +1263,22 @@ details[open] summary .round-button {
         font-size: 50px;
     }
 
-    .footer .risk-disclaimer h2, .footer .risk-disclaimer p {
-        font-size: 30px;
+    .footer .rights {
+        width: 1056px;
     }
 
-    .footer .rights {
-        font-size: 30px;
+    .footer .risk-disclaimer {
+        width: 2000px;
     }
+
+    .footer .risk-disclaimer p {
+        max-width: 2000px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details {
+        width: 984px;
+    }
+
 }
 
 @media ( min-width: 1921px) and ( max-width: 2600px ){
@@ -1444,6 +1530,18 @@ details[open] summary .round-button {
     .faq .container .answers details {
         width: 1062px;
     }
+
+    .footer .rights {
+        max-width: 844px;
+    }
+
+    .footer .risk-disclaimer p {
+        max-width: 1271px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details {
+        width: 622px;
+    }
 }
 
 @media ( max-width: 1280px ) {
@@ -1686,27 +1784,16 @@ details[open] summary .round-button {
         font-size: 14px;
     }
 
-    .footer .container .links-list div {
-        margin-right: 20px;
-    }
-
-    .footer .container .links-list hr {
-        margin-right: 20px;
-    }
-
-    .footer .container .links-list div a {
-        font-size: 14px;
-    }
-    
-    .footer .risk-disclaimer h2 {
-        font-size: 32px;
-    }
-    .footer .risk-disclaimer p {
-        font-size: 14px;
-    }
-
     .footer .rights {
-        font-size: 14px;
+        max-width: 1000px;
+    }
+
+    .footer .risk-disclaimer p {
+        max-width: 1000px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details {
+        width: 1000px;
     }
 }
 
@@ -2216,28 +2303,20 @@ details[open] summary .round-button {
         font-size: 14px;
     }
 
-    .footer .container {
-        flex-direction: column;
-    }
-
     .footer .container img {
         margin-top: 30px;
     }
 
-    .footer .container .links-list div a {
-        font-size: 14px;
-    }
-
-    .footer .container .links-list div:last-child {
-        margin-right: 0;
-    }
-
-    .footer .risk-disclaimer h2 {
-        font-size: 28px;
-    }
-
     .footer .rights {
-        font-size: 14px;
+        max-width: 800px;
+    }
+
+    .footer .risk-disclaimer p {
+        max-width: 800px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details {
+        width: 800px;
     }
 }
 
@@ -2359,16 +2438,26 @@ details[open] summary .round-button {
         font-size: 14px;
     }
 
-    .footer .container {
-        flex-direction: column;
+    .footer .container .links-list {
+        width: 629px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    
-    .footer .container .links-list div a {
-        font-size: 14px;
+
+    .footer .container .links-list span {
+        display: none;
     }
 
     .footer .rights {
-        font-size: 14px;
+        max-width: 629px;
+    }
+
+    .footer .risk-disclaimer p {
+        max-width: 629px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details {
+        width: 629px;
     }
 }
 
@@ -2410,6 +2499,18 @@ details[open] summary .round-button {
 @media ( max-width: 617px ) {
     header .exposure {
         right: -230px;
+    }
+}
+
+@media ( max-device-width: 1024px ) {
+    body {
+        width: 1229px;
+    }
+}
+
+@media ( max-device-width: 768px ) {
+    body {
+        width: 956px;
     }
 }
 
@@ -3444,34 +3545,45 @@ details[open] summary .round-button {
     }
 
     .footer .container .links-list {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        width: 790px;
+        justify-content: space-between;
     }
 
-    .footer .container .links-list div {
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .footer .container .links-list div a {
-        font-weight: 400;
-        margin-right: 30px;
-    }
-
-    .footer .container .links-list hr {
-        width: 288px;
-        margin-left: 0;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .footer .risk-disclaimer p {
+    .footer .container .links-list a {
         font-size: 30px;
     }
 
     .footer .rights {
+        max-width: 790px;
+        font-size: 25px;
+    }
+
+    .footer .risk-disclaimer p {
+        max-width: 790px;
+        font-size: 25px;
+    }
+    .footer .container hr {
+        width: 730px;
+    }
+
+    .footer .container .legal-disclaimers h2 {
+        font-size: 50px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details {
+        width: 790px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details .summary {
+        height: 110px;
+        border-radius: 25px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details .summary p {
+        font-size: 30px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details .opening p {
         font-size: 30px;
     }
 }
@@ -3484,7 +3596,7 @@ details[open] summary .round-button {
 
 @media ( max-device-width: 320px ) {
     body {
-        width: 870px;
+        width: 920px;
         margin: 0;
         overflow-x: hidden;
     }
@@ -3797,32 +3909,48 @@ details[open] summary .round-button {
     }
 
     .footer .container .links-list {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .footer .container .links-list div {
-        width: 300px;
+        width: 790px;
+        height: 300px;
         flex-direction: column;
-        justify-content: center;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
 
-    .footer .container .links-list div a {
-        font-weight: 400;
-        font-size: 30px;
-        margin-right: 30px;
-        margin-bottom: 20px;
-    }
-
-    .footer .container .links-list hr {
-        width: 800px;
-        margin-right: 20px;
+    .footer .container .links-list a {
+        font-size: 43px;
     }
 
     .footer .rights {
-        font-size: 30px;
+        font-size: 38px;
+    }
+
+    .footer .risk-disclaimer h2 {
+        font-size: 36px;
+    }
+
+    .footer .risk-disclaimer p {
+        max-width: 803px;
+        font-size: 39px;
+    }
+
+    .footer .container .legal-disclaimers h2 {
+        font-size: 50px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details {
+        width: 790px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details .summary {
+        height: 211px;
+        border-radius: 50px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details .summary p {
+        font-size: 50px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details .opening p {
+        font-size: 45px;
     }
 }
