@@ -996,7 +996,7 @@ details[open] summary .round-button {
     align-items: center;
     margin: 70px;
     width: 100%;
-    color: #527C6F;
+    color: white;
 }
 
 .footer .container .links-list a {
@@ -1014,7 +1014,7 @@ details[open] summary .round-button {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    color: #C2C2C2;
+    color: white;
 }
 
 .footer .risk-disclaimer h2 {
@@ -1031,7 +1031,7 @@ details[open] summary .round-button {
     font-weight: normal;
     font-size: 18px;
     line-height: 150%;
-    color: #C2C2C2;
+    color: white;
     margin-top: 0;
     margin-bottom: 50px;
     text-align: left;
@@ -1039,7 +1039,7 @@ details[open] summary .round-button {
 
 .footer .rights a {
     text-decoration: none;
-    color: #f7f7f7;
+    color: white;
 }
 
 .footer .container hr {
@@ -1059,7 +1059,7 @@ details[open] summary .round-button {
     font-size: 36px;
     line-height: 44px;
     text-align: center;
-    color: #C2C2C2;
+    color: white;
 }
 
 .footer .container .legal-disclaimers .spoilers {
