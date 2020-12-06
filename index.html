@@ -22,6 +22,12 @@
             }(document));
         </script>
         <!-- END intgrtn -->
+        <style>
+            #animation {
+                width: 100%;
+                height: 400px;
+            }
+        </style>
     </head>
     <body>
         <div class="wrapper">
@@ -39,6 +45,9 @@
                 </div>
             </header>
             <main class = "main">
+                <div id = "animation">
+
+                </div>
                 <section id = "home" class = "intro">
                     <div class = "container">
                         <div class = "content">   
@@ -449,5 +458,326 @@
                 }, 10);
             });
         </script>
+        <script type="module">
+
+			import * as THREE from 'https://threejs.org/build/three.module.js';
+
+			import Stats from 'https://threejs.org/examples/jsm/libs/stats.module.js';
+
+			THREE.Cache.enabled = true;
+            let block = document.getElementById("animation");
+
+			let container, stats, permalink, hex;
+
+			let camera, cameraTarget, scene, renderer;
+
+			let group, textMesh1, textMesh2, textGeo, materials, centerOffset, plane2;
+
+			let firstLetter = true;
+
+			let text = "The Stocks Man",
+
+				bevelEnabled = true,
+
+				font = undefined,
+
+				fontName = "optimer", // helvetiker, optimer, gentilis, droid sans, droid serif
+				fontWeight = "bold"; // normal bold
+
+			const height = 20,
+				size = 70,
+				hover = 30,
+
+				curveSegments = 4,
+
+				bevelThickness = 2,
+				bevelSize = 1.5;
+
+			const mirror = false;
+
+			const fontMap = {
+
+				"helvetiker": 0,
+				"optimer": 1,
+				"gentilis": 2,
+				"droid/droid_sans": 3,
+				"droid/droid_serif": 4
+
+			};
+
+			const weightMap = {
+
+				"regular": 0,
+				"bold": 1
+
+			};
+
+			const reverseFontMap = [];
+			const reverseWeightMap = [];
+
+			for ( const i in fontMap ) reverseFontMap[ fontMap[ i ] ] = i;
+            for ( const i in weightMap ) reverseWeightMap[ weightMap[ i ] ] = i;
+            let light1, light2, light3, light4, light5, light6;
+
+
+			let targetRotation = 0;
+			let targetRotationOnPointerDown = 0;
+
+			let pointerX = 0;
+			let pointerXOnPointerDown = 0;
+
+			let windowHalfX = block.width / 2;
+
+			let fontIndex = 1;
+
+			init();
+			animate();
+
+			function decimalToHex( d ) {
+
+				let hex = Number( d ).toString( 16 );
+				hex = "000000".substr( 0, 6 - hex.length ) + hex;
+				return hex.toUpperCase();
+
+			}
+
+			function init() {
+
+				container = document.createElement( 'div' );
+				document.body.appendChild( container );
+
+				permalink = document.getElementById( "permalink" );
+
+				// CAMERA
+
+				camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 2000 );
+				camera.position.set( 0, 30, 700 );
+
+				// cameraTarget = new THREE.Vector3( 0, 50, 0 );
+
+				// SCENE
+
+				scene = new THREE.Scene();
+				scene.background = new THREE.Color( 0x000000 );
+				scene.fog = new THREE.Fog( 0x000000, 250, 1400 );
+
+				// LIGHTS
+
+				const dirLight = new THREE.DirectionalLight( 0xffffff, 1 );
+				// scene.add( dirLight );
+
+				const pointLight = new THREE.PointLight( 0xffffff, 1.5 );
+				pointLight.position.set( 0, 100, 90 );
+				// scene.add( pointLight );
+
+				// Get text from hash
+
+				const hash = document.location.hash.substr( 1 );
+
+				if ( hash.length !== 0 ) {
+
+					const colorhash = hash.substring( 0, 6 );
+					const fonthash = hash.substring( 6, 7 );
+					const weighthash = hash.substring( 7, 8 );
+					const bevelhash = hash.substring( 8, 9 );
+					const texthash = hash.substring( 10 );
+
+					hex = colorhash;
+					pointLight.color.setHex( parseInt( colorhash, 16 ) );
+
+					fontName = reverseFontMap[ parseInt( fonthash ) ];
+					fontWeight = reverseWeightMap[ parseInt( weighthash ) ];
+
+					bevelEnabled = parseInt( bevelhash );
+
+					text = decodeURI( texthash );
+
+
+				} else {
+
+					pointLight.color.setHSL( Math.random(), 1, 0.5 );
+					hex = decimalToHex( pointLight.color.getHex() );
+
+				}
+
+				materials = [
+					new THREE.MeshPhongMaterial( { color: 0x3285d9, flatShading: true } ), // front
+					new THREE.MeshPhongMaterial( { color: 0x3285d9 } ) // side
+				];
+
+				group = new THREE.Group();
+				group.position.y = 100;
+
+				scene.add( group );
+
+				loadFont();
+
+                const intensity = 2;
+				const distance = 200;
+                const decay = 2;
+                const sphere = new THREE.SphereBufferGeometry( 3, 16, 8 );
+
+
+                const c1 = 0x02b0ff, c2 = 0xde760d, c3 = 0xde220d, c4 = 0x0dde48, c5 = 0x00ffaa, c6 = 0xff1100;
+                
+                let controls;
+
+
+                light1 = new THREE.PointLight( c1, intensity, distance, decay );
+                light1.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: c1 } ) ) );
+                light1.castShadow = true; 
+                scene.add(light1);
+
+                light2 = new THREE.PointLight( c2, intensity, distance, decay );
+                light2.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: c2 } ) ) );
+                light2.castShadow = true; 
+                scene.add( light2 );
+                
+			    light3 = new THREE.PointLight( c3, intensity, distance, decay );
+                light3.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: c3 } ) ) );
+                light3.castShadow = true; 
+                scene.add( light3 );
+                
+			    light4 = new THREE.PointLight( c4, intensity, distance, decay );
+                light4.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: c4 } ) ) );
+                light4.castShadow = true;
+                scene.add( light4 );
+                
+			    light5 = new THREE.PointLight( c5, intensity, distance, decay );
+                light5.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: c5 } ) ) );
+                light5.castShadow = true; 
+                scene.add( light5 );
+
+                const planeGeometry = new THREE.PlaneBufferGeometry( 10000, 10000, 32, 32 );
+                const planeMaterial = new THREE.MeshStandardMaterial( { color: 0xffffff, transparent: true } )
+                plane2 = new THREE.Mesh( planeGeometry, planeMaterial );
+                plane2.receiveShadow = true;
+                plane2.rotation.x = - Math.PI / 2;;
+                scene.add( plane2 );
+
+				// RENDERER
+
+				renderer = new THREE.WebGLRenderer( { antialias: true } );
+				renderer.setPixelRatio( window.devicePixelRatio );
+                renderer.setSize( window.innerWidth, window.innerHeight );
+                renderer.shadowMap.enabled = true;
+                renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+				block.appendChild( renderer.domElement );
+
+				window.addEventListener( 'resize', onWindowResize, false );
+
+			}
+
+			function onWindowResize() {
+
+				windowHalfX = window.innerWidth / 2;
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+			function loadFont() {
+
+				const loader = new THREE.FontLoader();
+				loader.load( 'https://threejs.org/examples/fonts/helvetiker_bold.typeface.json', function ( response ) {
+
+					font = response;
+
+					refreshText();
+				} );
+
+			}
+
+			function createText() {
+
+				textGeo = new THREE.TextGeometry( "The Stocks Man", {
+
+					font: font,
+
+					size: size,
+					height: height,
+					curveSegments: curveSegments,
+
+					bevelThickness: bevelThickness,
+					bevelSize: bevelSize,
+					bevelEnabled: bevelEnabled
+
+				} );
+
+				textGeo.computeBoundingBox();
+				textGeo.computeVertexNormals();
+
+				centerOffset = - 0.5 * ( textGeo.boundingBox.max.x - textGeo.boundingBox.min.x );
+
+				textGeo = new THREE.BufferGeometry().fromGeometry( textGeo );
+
+				textMesh1 = new THREE.Mesh( textGeo, materials );
+
+				textMesh1.position.x = centerOffset;
+				textMesh1.position.y = -120;
+                textMesh1.position.z = 0;
+                
+                textMesh1.castShadow = true;
+
+				group.add( textMesh1 );
+			}
+
+			function refreshText() {
+				group.remove( textMesh1 );
+				if ( mirror ) group.remove( textMesh2 );
+
+				if ( ! text ) return;
+
+				createText();
+
+			}
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+				render();
+			}
+
+			function render() {
+                const time = Date.now() * 0.00025;
+                const d = 150;
+                plane2.position.x = 0;
+                plane2.position.y = -50;
+                plane2.position.z = -100;
+
+                light1.position.x = Math.cos( time * 1.7 ) * 370;
+				light1.position.y = Math.cos( time * 3.5 ) * 30;
+                light1.position.z = Math.cos( time * 5) * 30;
+
+
+				light2.position.x = Math.sin( time * 1.5 ) * 370;
+				light2.position.y = Math.sin( time * 4.3) * 30;
+				light2.position.z = Math.sin( time * 4.8) * 30;
+
+				light3.position.x = Math.sin( time * 1.7 ) * 370;
+				light3.position.y = Math.cos( time * 3.5 ) * 30
+				light3.position.z = Math.sin( time * 5) * 30;
+
+				light4.position.x = Math.cos( time * 1.3 ) * 370;
+				light4.position.y = Math.cos( time * 3.7 ) * 30;
+                light4.position.z = Math.sin( time * 4.2) * 30;
+                
+                light5.position.x = Math.sin( time * 1 ) * 370;
+				light5.position.y = Math.cos( time * 3 ) * 30;
+                light5.position.z = Math.sin( time * 3.8 ) * 30;
+
+				group.rotation.y += ( targetRotation - group.rotation.y ) * 0.05;
+
+
+				renderer.clear();
+				renderer.render( scene, camera );
+
+			}
+
+		</script>
     </body>
 </html>
