@@ -404,7 +404,7 @@ main {
     color: white;
     background-color: #FFC700;
     border: none;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     transition-property: background-color;
     transition-duration: 0.2s;
 }
