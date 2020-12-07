@@ -69,14 +69,22 @@
                                     </iframe>
                                 </div>
                             </div>
+                            <div id = "form2" class = "form-container hidden-form2" data-aos="fade-left" data-aos-duration="1500">
+                                <h2 class = "form-header">Complete the registration and open an account with Exness!</h2>
+                                <h3>STEP 2</h3>
+                                <img class = "image-step2" src = "images/exness-logo.png">
+                                <form>
+                                    <input type = "submit" value = "Open Account"/>
+                                </form>
+                            </div>  
                             <div id = "form" class = "form-container" data-aos="fade-left" data-aos-duration="1500">
-                                    <img src = "images/logo step 2.png">
+                                    <img src = "images/logo-1.png">
                                     <h2 class = "form-header">Fill in the form & Join our Stock Followers Community</h2>
-                                    <h3>STEP 2</h3>
+                                    <h3>STEP 1</h3>
                                     <form>
-                                        <input type = "text" placeholder="Phone number"/>
-                                        <input type = "password" placeholder="Password"/>
-                                        <input type = "password" placeholder="Repeat Password"/>
+                                        <input type = "text" placeholder="First Name"/>
+                                        <input type = "text" placeholder="Last Name"/>
+                                        <input type = "email" placeholder="Email Address"/>
                                         <div class="checkboxes">
                                             <label>
                                                 <input type="checkbox"><span>By checking this box you agree to subscribe to Traders</br>
@@ -95,7 +103,7 @@
                                                 </span>
                                             </label>
                                         </div>
-                                        <input type = "submit" value = "JOIN COMMUNITY"/>
+                                        <input id = "submit-button" type = "submit" value = "JOIN COMMUNITY"/>
                                     </form>
                             </div>   
                         </div>                                                                          
@@ -415,6 +423,13 @@
         </div>
         <script>
             AOS.init();
+        </script>
+        <script>
+            $('#submit-button').click( function( e ){
+                e.preventDefault();
+                $('#form').addClass('hidden-form2');
+                $('#form2').removeClass('hidden-form2');
+            });
         </script>
          <script>
             $('.summary').click(function() {

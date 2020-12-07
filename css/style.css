@@ -321,12 +321,24 @@ main {
     justify-content: flex-start;
     align-items: center;
     width: 407px;
-    height: 878px;
+    height: auto;
     margin-top: 50px;
     margin-left: 20px;
     box-shadow: 0px 4px 25px rgba(79, 79, 79, 0.1);
     border-radius: 30px;
     background-color: white;
+}
+
+.intro .container .content .hidden-form2 {
+    display: none;
+}
+
+.intro .container .content #form2 h2 {
+    margin-top: 50px;
+}
+
+.intro .container .content .form-container .image-step2 {
+    margin-top: 0;    
 }
 
 .intro .container .content .form-container img {
