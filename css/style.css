@@ -112,7 +112,7 @@ header .container {
 header .container .main-content {
     display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 1682px;
@@ -123,12 +123,6 @@ header .container .main-content img {
     height: 62px;    
 }
 
-header .exposure{
-    margin-right: 100px;
-    position: absolute;
-    right: 0;
-    z-index: 10;
-}
 header .exposure .country {
     display: flex;
     justify-content: center;
@@ -1373,6 +1367,10 @@ details[open] summary .round-button {
         height: auto;
     }
 
+    .intro .container .content .video-container .video {
+        height: 430px;
+    }
+
     .intro .container .content .video-container .video-header h1 {
         font-weight: 700;
         font-size: 58px;
@@ -1574,6 +1572,11 @@ details[open] summary .round-button {
         width: 657.2px;
         height: auto;
     }
+
+    .intro .container .content .video-container .video {
+        height: 385px;
+    }
+
     .intro .container .content .video-container .video-header h1 {
         font-size: 54px;
         text-align: left;
@@ -2071,9 +2074,12 @@ details[open] summary .round-button {
 }
 
 @media ( max-width: 1000px ) {
+    header .container {
+        width: 657px;
+    }
+
     header .container .main-content {
         width: 100%;
-        justify-content: center;
     }
 
     header .container .main-content .navigation {
@@ -3638,7 +3644,6 @@ details[open] summary .round-button {
         top: 0;
         right: -650px;
         width: 310px;
-        align-items: flex-start;
     }
 
     header .exposure .country {
