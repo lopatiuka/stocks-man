@@ -333,7 +333,8 @@ main {
 }
 
 .intro .container .content #form2 h2 {
-    margin-top: 50px;
+    margin-top: 0;
+    font-weight: 500;
 }
 
 .intro .container .content #form2 h3 {
@@ -1390,6 +1391,10 @@ details[open] summary .round-button {
         align-self: flex-start;
         margin-bottom: 10px;
     }
+    
+    .intro .container .content #form2 {
+        height: 430px;
+    }
 
     .intro .container .content .form-container {
         width: 407px;
@@ -1594,6 +1599,14 @@ details[open] summary .round-button {
 
     .intro .container .content .video-container .video-header {
         margin-bottom: 70px;
+    }
+
+    .intro .container .content #form2 {
+        height: 385px;
+    }
+
+    .intro .container .content #form2 h2 {
+        margin: 0;
     }
 
     .intro .container .content .form-container {
