@@ -2134,9 +2134,10 @@ details[open] summary .round-button {
         height: auto;
         margin-bottom: 100px;
     }
-    
+ 
     .intro .container .content .form-container {
         width: 524px;
+        margin: 20px 0 0 0;
     }
 
     .intro .container .content .form-container h2 {
@@ -2646,6 +2647,10 @@ details[open] summary .round-button {
 
     .intro .container .content .video-container .video-header p {
         text-align: center;
+    }
+
+    .intro .container .content #form2 {
+        height: auto;
     }
 
     .intro .container .content .form-container {
