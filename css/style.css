@@ -327,8 +327,17 @@ main {
     display: none;
 }
 
+.intro .container .content #form2 {
+    height: 640px;
+    justify-content: space-between;
+}
+
 .intro .container .content #form2 h2 {
     margin-top: 50px;
+}
+
+.intro .container .content #form2 h3 {
+    font-weight: bold;
 }
 
 .intro .container .content .form-container .image-step2 {
