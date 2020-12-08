@@ -1169,6 +1169,11 @@ details[open] summary .round-button {
         height: 900px;
     }
 
+    
+    .intro .container .content #form2 {
+        height: 900px;
+    }
+
     .intro .container .content .form-container {
         width: 700px;
         height: auto;
