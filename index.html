@@ -94,7 +94,7 @@
                                                 </span>
                                             </label>
                                         </div>
-                                        <input id = "submit-button" type = "submit" value = "JOIN COMMUNITY"/>
+                                        <button id = "submit-button">JOIN COMMUNITY</button>
                                     </form>
                             </div>   
                         </div>                                                                          
@@ -231,43 +231,53 @@
                         <h2 class = "faq-header">FAQ</h2>
                         <p class = "faq-caption">Frequently Asked Questions</p>
                         <div class = "answers">
-                           <details data-aos="fade-up" data-aos-duration="1000">
-                               <summary> <div class = "round-button">+</div>How much can I earn from Amazon Stocks?</summary>
+                           <div class  = "details-faq" data-aos="fade-up" data-aos-duration="1000">
+                               <div class = "summary-faq"> <div class = "round-button">+</div>How much can I earn from Amazon Stocks?</div>
+                               <div class = "opening">
                                     <p>This is a subjective question. Earning from stocks can relate to both your entry time and 
                                         position. In general, in 2020, Amazon Inc Stocks increased their value from 1771 USD per 
                                         share to over 3000 USD. That was a yearly growth of over 77% which was the potential profit 
                                         one could have gained that year.
                                     </p>
-                           </details>
-                           <details data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                                <summary> <div class = "round-button">+</div>Where can I buy or trade Amazon Stocks?</summary>
-                                <p>Most stocks are being traded on the stock markets and are available for purchase via financial 
-                                    institutions. We also offer a variety of alternative investments you can make with additional 
-                                    brokers for both investing and buying stocks or stock contracts for difference.
-                                </p>
-                            </details>
-                            <details data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                                <summary> <div class = "round-button">+</div>How much time will it require from me?</summary>
-                                <p>The time investment in any new venture we choose to go for, is subject to each individual's 
-                                    personal choice. In reality, opening an account, verifying it and purchasing your first assets, 
-                                    takes about 5 minutes. But having said that, there is always more than just making a registration, 
-                                    depositing funds and buying a stock.
-                                </p>
-                            </details>
-                            <details data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                                <summary> <div class = "round-button">+</div>Is my information safe?</summary>
-                                <p>We take data security and privacy very seriously. Both us and our recommended partners are in full 
-                                    compliance with KYC, AML, Privacy Policies, Terms of Use (EULA) and most importantly GDPR 
-                                    guidelines. So your information is safe as per the applicable laws and global data protection 
-                                    requirements.
-                                </p>
-                            </details>
-                            <details data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                                <summary> <div class = "round-button">+</div>What should I do next?</summary>
-                                <p>If you’ve decided to move forward and pursue this venture, please go ahead and create your watch 
-                                    list, set up an account with one of our recommended partners and you'll be good to go!
-                                </p>
-                            </details>
+                                </div>
+                           </div class  = "details-faq">
+                           <div class  = "details-faq" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                                <div class = "summary-faq"> <div class = "round-button">+</div>Where can I buy or trade Amazon Stocks?</div>
+                                <div class = "opening">
+                                    <p>Most stocks are being traded on the stock markets and are available for purchase via financial 
+                                        institutions. We also offer a variety of alternative investments you can make with additional 
+                                        brokers for both investing and buying stocks or stock contracts for difference.
+                                    </p>
+                                </div>
+                            </div class  = "details-faq">
+                            <div class  = "details-faq" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                                <div class = "summary-faq"> <div class = "round-button">+</div>How much time will it require from me?</div>
+                                <div class = "opening">
+                                    <p>The time investment in any new venture we choose to go for, is subject to each individual's 
+                                        personal choice. In reality, opening an account, verifying it and purchasing your first assets, 
+                                        takes about 5 minutes. But having said that, there is always more than just making a registration, 
+                                        depositing funds and buying a stock.
+                                    </p>
+                                </div>
+                            </div class  = "details-faq">
+                            <div class  = "details-faq" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                <div class = "summary-faq"> <div class = "round-button">+</div>Is my information safe?</div>
+                                <div class = "opening">
+                                    <p>We take data security and privacy very seriously. Both us and our recommended partners are in full 
+                                        compliance with KYC, AML, Privacy Policies, Terms of Use (EULA) and most importantly GDPR 
+                                        guidelines. So your information is safe as per the applicable laws and global data protection 
+                                        requirements.
+                                    </p>
+                                    </div>
+                            </div class  = "details-faq">
+                            <div class  = "details-faq" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                                <div class = "summary-faq"> <div class = "round-button">+</div>What should I do next?</div>
+                                <div class = "opening">
+                                    <p>If you’ve decided to move forward and pursue this venture, please go ahead and create your watch 
+                                        list, set up an account with one of our recommended partners and you'll be good to go!
+                                    </p>
+                                </div>
+                            </div class  = "details-faq">
                         </div>
                     </div> 
                 </section>
@@ -437,6 +447,20 @@
                }
            });
        </script>
+        <script>
+            $('.summary-faq').click(function() {
+                var spoiler = $(this).next();
+                var arrow = $(this).children(".round-button")
+                if(spoiler.is(':visible')){
+                    spoiler.slideUp('normal');
+                    arrow.removeClass("round-button-rotated");
+                }
+                else{
+                    spoiler.slideDown('normal');
+                    arrow.addClass("round-button-rotated");
+                }
+            });
+        </script>
         <script>
             $("#start-link").click(function() { 
                 $('html, body').animate({

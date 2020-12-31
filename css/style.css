@@ -176,9 +176,7 @@ header .container .main-content .navigation a:active {
     color: #E2E2E2;
     font-weight: 700;
 }
-header .container .main-content img {
-  margin-right: 40px;
-}
+
 header .container .header-country {
   flex-direction: row;
 }
@@ -395,7 +393,53 @@ main {
     outline: none;
 }
 
-.intro .container .content .form-container form input[type=submit] {
+.intgrtn-form-signup .intgrtn-input-holder-email {
+    display: none;
+}
+
+.intgrtn-form-signup .intgrtn-input-holder-last-name {
+    display: none;
+}
+
+.intgrtn-form-signup .intgrtn-input-holder-first-name {
+    display: none;
+}
+
+.intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group {
+    height: 50px;
+    margin-bottom: 0px;
+    max-width: 338px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group .intgrtn-area-flags-holder {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    background-color: inherit;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid rgb(20, 84, 133);
+}
+
+.intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group .intgrtn-area-flags-holder .intgrtn-selected-area {
+    margin-top: 6px;
+}
+
+.intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group .intgrtn-area-flags-holder .intgrtn-selected-area .intgrtn-phone-code {
+    color: #4F4F4F;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: -2px;
+}
+
+.intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group input {
+    width: 242.9px;
+    margin: 0;
+}
+
+.intro .container .content .form-container form button {
     width: 282px;
     height: 85px;
     border-radius: 42.5px;
@@ -413,12 +457,17 @@ main {
     transition-duration: 0.2s;
 }
 
-.intro .container .content .form-container form input[type=submit]:hover{
+.intro .container .content .form-container form button:hover:not([disabled]){
     background-color: #FF9900;
     cursor: pointer; 
 }
 
-.intro .container .content .form-container form input[type=submit]:active{
+.signup-form-wrapper .intgrtn-form-signup .intgrtn-btn-submit-holder .intgrtn-btn-submit[disabled], .signup-form-wrapper .intgrtn-form-optin .intgrtn-btn-submit-holder .intgrtn-btn-submit[disabled] {
+    background-color: #C2C2C2;
+    cursor: not-allowed;
+}
+
+.intro .container .content .form-container form button:active{
     background-color: #EA8C00;
 }
 
@@ -457,6 +506,10 @@ main {
 .intro .container .content .form-container form .checkboxes label span a {
     color: #FFC700;
     text-decoration: none;
+}
+
+.intro .container .content .form-container form .checkboxes label span a span {
+    color: #FFC700;
 }
 
 .intro .container .content .form-container form .checkboxes label span a:active {
@@ -921,7 +974,7 @@ main {
     margin-bottom: 100px;
 }
 
-.faq .container .answers details {
+.faq .container .answers .details-faq {
     margin-bottom: 20px;
     cursor: pointer;
     display: flex;
@@ -930,11 +983,7 @@ main {
     width: 1680px;
 }
 
-.faq .container .answers details summary::-webkit-details-marker {
-    display: none
-}
-
-.faq .container .answers details summary {
+.faq .container .answers .details-faq .summary-faq {
     width: 100%;
     height: 55px;
     display: flex;
@@ -953,7 +1002,7 @@ main {
     color: white;
 }
 
-.faq .container .answers details summary .round-button{
+.faq .container .answers .details-faq .summary-faq .round-button{
     width: 34px;
     height: 34px;
     border-radius: 100px;
@@ -972,15 +1021,23 @@ main {
     transition-duration: 0.2s;
 }
 
-details[open] summary .round-button {
+.round-button-rotated {
     transform: rotate(135deg);
 }
 
-.faq .container .answers details summary:focus {
+.faq .container .answers .details-faq .summary-faq:focus {
     outline: none;
 }
 
-.faq .container .answers details p {
+.faq .container .answers .details-faq .opening {
+    display: none;
+}
+
+.faq .container .answers .details-faq .summary-faq:focus {
+    outline: none;
+}
+
+.faq .container .answers .details-faq p {
     max-width: 1680px;
     font-size: 18px;
     font-style: normal;
@@ -1265,23 +1322,23 @@ details[open] summary .round-button {
         height: 668.73px;
     }
 
-    .faq .container .answers details {
+    .faq .container .answers .details-faq {
         width: 2550px;
     }
 
-    .faq .container .answers details summary {
+    .faq .container .answers .details-faq .summary-faq {
         height: 80px;
         font-size: 30px;
     }
 
-    .faq .container .answers details p {
+    .faq .container .answers .details-faq p {
         font-size: 30px;
         width: 2550px;
         max-width: 2550px;
         line-height: 35px;
     }
 
-    .faq .container .answers details summary .round-button {
+    .faq .container .answers .details-faq .summary-faq .round-button {
         width: 60px;
         height: 60px;
         font-size: 50px;
@@ -1365,7 +1422,7 @@ details[open] summary .round-button {
         z-index: -1;
     }
 
-    .faq .container .answers details {
+    .faq .container .answers .details-faq {
         width: 2000px;
     }
 }
@@ -1559,7 +1616,7 @@ details[open] summary .round-button {
         align-items: center;
     }
 
-    .faq .container .answers details {
+    .faq .container .answers .details-faq {
         width: 1062px;
     }
 
@@ -1608,14 +1665,6 @@ details[open] summary .round-button {
         margin-bottom: 70px;
     }
 
-    .intro .container .content #form2 {
-        height: 385px;
-    }
-
-    .intro .container .content #form2 h2 {
-        margin: 0;
-    }
-
     .intro .container .content .form-container {
         width: 313.12px;
     }
@@ -1632,7 +1681,16 @@ details[open] summary .round-button {
     .intro .container .content .form-container form input {
         width: 258.04px;
     }
-    .intro .container .content .form-container form input[type = submit]{
+
+    .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group {
+        max-width: 261px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group input {
+        width: 147px;
+    }
+
+    .intro .container .content .form-container form button{
         width: 216.96px;
         height: 65.39px;
         font-size: 14px;
@@ -1817,15 +1875,15 @@ details[open] summary .round-button {
         align-items: center;
     }
 
-    .faq .container .answers details {
+    .faq .container .answers .details-faq {
         width: 828px;
     }
 
-    .faq .container .answers details summary {
+    .faq .container .answers .details-faq .summary-faq {
         font-size: 14px;
     }
 
-    .faq .container .answers details p {
+    .faq .container .answers .details-faq p {
         font-size: 14px;
     }
 
@@ -1886,7 +1944,7 @@ details[open] summary .round-button {
     .intro .container .content .form-container form input {
         width: 258.04px;
     }
-    .intro .container .content .form-container form input[type = submit]{
+    .intro .container .content .form-container form button{
         width: 216.96px;
         height: 65.39px;
         font-size: 14px;
@@ -2074,15 +2132,15 @@ details[open] summary .round-button {
         align-items: center;
     }
 
-    .faq .container .answers details {
+    .faq .container .answers .details-faq {
         width: 828px;
     }
 
-    .faq .container .answers details summary {
+    .faq .container .answers .details-faq .summary-faq {
         font-size: 14px;
     }
 
-    .faq .container .answers details p {
+    .faq .container .answers .details-faq p {
         font-size: 14px;
     }
 
@@ -2154,7 +2212,15 @@ details[open] summary .round-button {
     .intro .container .content .form-container form input {
         width: 431.81px;
     }
-    .intro .container .content .form-container form input[type = submit]{
+
+    .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group {
+        max-width: 432px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group input {
+        width: 318px;
+    }
+    .intro .container .content .form-container form button{
         height: 65.39px;
         width: 363.07px;
         margin-bottom: 50px;
@@ -2196,16 +2262,22 @@ details[open] summary .round-button {
 
 
     .about .container .history {
-        width: 800px;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .about .container .history .paragraphs-container {
+        width: 100%
     }
 
     .about .container .history .paragraphs-container .paragraphs {
-        width: 800px;
+        width: 100%;
         justify-content: space-between;
     }
-
+  
     .about .container .history div .paragraphs .history-paragraph {
-        width: 385px;
+        max-width: 385px;
+        width: auto;
         margin-right: 0;
     }
 
@@ -2345,11 +2417,11 @@ details[open] summary .round-button {
         align-items: center;
     }
 
-    .faq .container .answers details {
+    .faq .container .answers .details-faq {
         width: 799px;
     }
     
-    .faq .container .answers details p {
+    .faq .container .answers .details-faq p {
         font-size: 14px;
     }
 
@@ -2391,12 +2463,8 @@ details[open] summary .round-button {
         width: 306px;
     }
 
-    .about .container .history {
-        width: 668px;
-    }
-
     .about .container .history .paragraphs-container .paragraphs {
-        width: 668px;
+        max-width: 668px;
     }
 
     .about .container .history div .paragraphs .history-paragraph {
@@ -2475,16 +2543,15 @@ details[open] summary .round-button {
         height: auto;
     }
 
-    .faq .container .answers details {
+    .faq .container .answers .details-faq {
         width: 632px;
-        height: 42.88px;
     }
 
-    .faq .container .answers details[open]{
+    .faq .container .answers .details-faq[open]{
         height: auto;
     }
 
-    .faq .container .answers details p {
+    .faq .container .answers .details-faq p {
         font-size: 14px;
     }
 
@@ -2511,17 +2578,82 @@ details[open] summary .round-button {
     }
 }
 
-@media ( max-width: 700px ) {
-    body {
-        width: 850px;
+@media ( min-width: 481px ) and ( max-width: 545px ){
+
+    header {
+        height: 200px;
+        margin-bottom: -200px;
+    }   
+
+    header .container .main-content {
+        flex-direction: column;
     }
 
     header .exposure {
-        right: -180px;
+        margin-right: 0;
+    }
+
+    header .exposure .country {
+        flex-direction: column-reverse;
+    }
+
+    .intro .container {
+        margin-top: 180px;
+    }
+
+    .intro .container .content .video-container .video {
+        height: 265px;
+    }
+
+    .intro .container .content .form-container {
+        width: 100%;
+    }
+
+    .intro .container .content .form-container form {
+        width: 100%;
+    }
+    
+    .intro .container .content .form-container form .intgrtn-input-holder {
+        width: 100%;
+    }
+
+    .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group {
+        margin-left: 5px;
     }
 }
 
-@media ( max-width: 690px ) {
+@media ( min-width: 481px ) and ( max-width: 690px ) {
+    .intro .container .content {
+        width: 100%;
+    }
+
+    .intro .container .content .video-container {
+        width: 100%;
+    }
+
+    .intro .container .content .video-container .video-header h1 {
+        width: 100%;
+    }
+
+    .intro .ribbon .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about .container .about-header {
+        width: auto;
+    }
+
+    .about .container .history .paragraphs-container .paragraphs {
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    .about .container .history div .paragraphs .history-paragraph {
+        width: 100%;
+        max-width: initial;
+    }
+
     .growth .container .graph .img-768 {
         display: none;
     }
@@ -2543,6 +2675,35 @@ details[open] summary .round-button {
     .growth .container .few-things .info {
         flex-direction: column;
         margin-left: 50px;
+    }
+
+    .how-works .container .steps .step-item {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .faq .container .answers .details-faq {
+        width: 455px;
+    }
+
+    .faq .container .answers .details-faq .summary-faq .round-button {
+        min-width: 34px;
+    }
+
+    .footer .container .links-list {
+        width: 455px;
+    }
+
+    .footer .rights {
+        max-width: 455px;
+    }
+
+    .footer .risk-disclaimer {
+        max-width: 455px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details {
+        width: 455px;
     }
 }
 
@@ -2674,7 +2835,33 @@ details[open] summary .round-button {
         height: 70px;
         font-size: 30px;
     }
-    .intro .container .content .form-container form input[type = submit]{
+
+    .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group {
+        max-width: 755px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group .intgrtn-area-flags-holder .intgrtn-selected-area {
+        margin-top: -10px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group .intgrtn-area-flags-holder .intgrtn-selected-area .intgrtn-phone-code {
+        font-size: 30px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group input {
+        width: 655px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group .intgrtn-area-flags-holder{
+        align-items: flex-start;
+    }
+
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group .intgrtn-area-flags-holder .intgrtn-selected-area {
+        margin-top: -14px;
+    }
+
+    .intro .container .content .form-container form button{
         height: 65.39px;
         width: 463.07px;
         margin-bottom: 50px;
@@ -2694,7 +2881,7 @@ details[open] summary .round-button {
         line-height: 35px;
     }
 
-    .intro .container .content .form-container form input[type = submit] {
+    .intro .container .content .form-container form button {
         width: 580px;
         height: 100px;
         border-radius: 100px;
@@ -2915,39 +3102,6 @@ details[open] summary .round-button {
         margin-top: -10px;
     }
 
-    .feedbacks .container .feedback-item {
-        flex-direction: column;
-        align-items: center;
-        width: 800px;
-    }
-
-    .feedbacks .container .feedback-item .avatar {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-    }
-
-    .feedbacks .container .feedback-item .avatar img {
-        width: 300px;
-        height: 300px;
-    }
-
-    .feedbacks .container .feedback-item .avatar div .name {
-        font-size: 40px;
-    }
-
-    .feedbacks .container .feedback-item .avatar div .info {
-        font-size: 30px;
-    }
-
-    .feedbacks .container .feedback-item .feedback-item-content p {
-        width: 100%;
-        font-size: 35px;
-        line-height: 50px;
-    }
-
     .how-works .container>h2 {
         font-size: 50px;
     }
@@ -3037,24 +3191,23 @@ details[open] summary .round-button {
         height: auto;
     }
 
-    .faq .container .answers details {
+    .faq .container .answers .details-faq {
         width: 800px;
-        height: 80px;
         margin-bottom: 30px;
     }
 
-    .faq .container .answers details summary{
+    .faq .container .answers .details-faq .summary-faq{
         height: 80px;
         font-size: 25px;
     }
 
-    .faq .container .answers details summary .round-button {
+    .faq .container .answers .details-faq .summary-faq .round-button {
         width: 60px;
         height: 60px;
         font-size: 50px;
     }
 
-    .faq .container .answers details p {
+    .faq .container .answers .details-faq p {
         font-size: 20px;
     }
     
@@ -3209,7 +3362,7 @@ details[open] summary .round-button {
         height: 70px;
         font-size: 30px;
     }
-    .intro .container .content .form-container form input[type = submit]{
+    .intro .container .content .form-container form button{
         height: 65.39px;
         width: 463.07px;
         margin-bottom: 50px;
@@ -3229,7 +3382,7 @@ details[open] summary .round-button {
         line-height: 35px;
     }
 
-    .intro .container .content .form-container form input[type = submit] {
+    .intro .container .content .form-container form button {
         width: 580px;
         height: 100px;
         border-radius: 100px;
@@ -3571,25 +3724,25 @@ details[open] summary .round-button {
         height: auto;
     }
 
-    .faq .container .answers details {
+    .faq .container .answers .details-faq {
         width: 800px;
-        height: 80px;
         margin-bottom: 30px;
     }
 
-    .faq .container .answers details summary{
+    .faq .container .answers .details-faq .summary-faq{
         height: 80px;
         font-size: 25px;
     }
 
-    .faq .container .answers details summary .round-button {
+    .faq .container .answers .details-faq .summary-faq .round-button {
         width: 60px;
         height: 60px;
         font-size: 50px;
     }
 
-    .faq .container .answers details p {
-        font-size: 20px;
+    .faq .container .answers .details-faq p {
+        font-size: 35px;
+        line-height: 150%;
     }
     
 
@@ -3744,7 +3897,16 @@ details[open] summary .round-button {
         font-size: 30px;
         padding-bottom: 5px;
     }
-    .intro .container .content .form-container form input[type = submit]{
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group input {
+        width: 380px;
+    }
+
+    .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group {
+        max-width: 524px;
+    }
+
+    .intro .container .content .form-container form button{
         height: 100px;
         width: 463.07px;
         margin-bottom: 50px;
@@ -3933,27 +4095,26 @@ details[open] summary .round-button {
         height: auto;
     }
 
-    .faq .container .answers details {
+    .faq .container .answers .details-faq {
         width: 800px;
-        height: 100px;
         margin-bottom: 30px;
     }
 
-    .faq .container .answers details summary {
+    .faq .container .answers .details-faq .summary-faq {
         font-size: 30px;
         height: 100px;
         line-height: 50px;
     }
 
-    .faq .container .answers details summary .round-button {
+    .faq .container .answers .details-faq .summary-faq .round-button {
         width: 70px;
         height: 70px;
         margin: 20px;
         font-size: 40px;
     }
 
-    .faq .container .answers details p {
-        font-size: 14px;
+    .faq .container .answers .details-faq p {
+        font-size: 55px;
     }
 
     .footer .container {
